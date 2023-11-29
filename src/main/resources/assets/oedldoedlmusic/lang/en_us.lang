@@ -1,0 +1,16 @@
+# creative tabs
+itemGroup.oedldoedlmusic.name=§dOedldoedl Music
+
+# icons
+item.oedldoedlcore.music_icon.annotation3=Version: §e1.12.2-3.0.0
+
+# blocks
+tile.oedldoedlmusic.rainbow_block.name=Rainbow Block
+tile.oedldoedlmusic.rainbow_block.tip1=Over the rainbow.
+
+tile.oedldoedlmusic.c4.name=C4
+entity.oedldoedlmusic.c4.name=Block of C4
+tile.oedldoedlmusic.c4.tip1=Not to be confused with C418.
+
+item.oedldoedlmusic.grenade_apple.name=Grenade Apple
+item.oedldoedlmusic.grenade_apple.tip1=May contain traces of gunpowder.

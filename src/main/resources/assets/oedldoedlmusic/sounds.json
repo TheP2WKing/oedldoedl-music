@@ -1,0 +1,37 @@
+{
+    "nuke_alarm": {
+        "category": "blocks",
+        "subtitle": "sound.oedldoedlmusic.nuke_alarm",
+        "sounds": [
+            "oedldoedlmusic:nuke_alarm"
+        ]
+    },
+    "tactical_nuke": {
+        "category": "blocks",
+        "subtitle": "sound.oedldoedlmusic.tactical_nuke",
+        "sounds": [
+            "oedldoedlmusic:tactical_nuke"
+        ]
+    },
+    "bomb": {
+        "category": "blocks",
+        "subtitle": "sound.oedldoedlmusic.bomb",
+        "sounds": [
+            "oedldoedlmusic:bomb"
+        ]
+    },
+    "atomic": {
+        "category": "blocks",
+        "subtitle": "sound.oedldoedlmusic.atomic",
+        "sounds": [
+            "oedldoedlmusic:atomic"
+        ]
+    },
+    "thep2wking": {
+        "category": "neutral",
+        "subtitle": "sound.oedldoedlmusic.thep2wking",
+        "sounds": [
+            "oedldoedlmusic:thep2wking"
+        ]
+    }
+}
