@@ -1,0 +1,13 @@
+{
+    "parent": "block/orientable",
+    "textures": 
+    {
+        "particle": "oedldoedlmusic:blocks/record_package_top_bottom",
+        "north": "oedldoedlmusic:blocks/record_package_side_content",
+        "south": "oedldoedlmusic:blocks/record_package_side_content",
+        "east": "oedldoedlmusic:blocks/record_package_side",
+        "west": "oedldoedlmusic:blocks/record_package_side",
+        "up": "oedldoedlmusic:blocks/record_package_top_bottom",
+        "down": "oedldoedlmusic:blocks/record_package_top_bottom"
+    }
+}

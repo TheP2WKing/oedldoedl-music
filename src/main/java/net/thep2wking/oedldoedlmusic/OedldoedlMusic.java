@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.thep2wking.oedldoedlcore.OedldoedlCore;
@@ -20,6 +21,7 @@ import net.thep2wking.oedldoedlcore.init.ModItems;
 import net.thep2wking.oedldoedlcore.util.ModLogger;
 import net.thep2wking.oedldoedlcore.util.ModReferences;
 import net.thep2wking.oedldoedlmusic.registry.ModRecipes;
+import net.thep2wking.oedldoedlmusic.util.ModGuiHandler;
 import net.thep2wking.oedldoedlmusic.util.proxy.CommonProxy;
 
 @Mod(modid = OedldoedlMusic.MODID, name = OedldoedlMusic.NAME, version = OedldoedlMusic.VERSION, dependencies = OedldoedlMusic.DEPENDENCIES)
@@ -56,6 +58,7 @@ public class OedldoedlMusic {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         ModLogger.preInitLogger(MODID);
+        NetworkRegistry.INSTANCE.registerGuiHandler(OedldoedlMusic.INSTANCE, new ModGuiHandler());
         PROXY.preInit(event);
     }
 
