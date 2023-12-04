@@ -1,8 +1,11 @@
 package net.thep2wking.oedldoedlmusic.registry;
 
+import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
 import net.thep2wking.oedldoedlcore.util.ModLogger;
 import net.thep2wking.oedldoedlcore.util.ModRecipeHelper;
 import net.thep2wking.oedldoedlmusic.OedldoedlMusic;
+import net.thep2wking.oedldoedlmusic.init.ModBlocks;
 import net.thep2wking.oedldoedlmusic.init.ModItems;
 
 public class ModRecipes {
@@ -238,5 +241,12 @@ public class ModRecipes {
 
 	public static void registerRecipes() {
 		ModLogger.registeredRecipesLogger(OedldoedlMusic.MODID);
+
+		ModRecipeHelper.addShapedRecipe(OedldoedlMusic.MODID, "record_package", new ItemStack(ModBlocks.RECORD_PACKAGE, 1, 0), "AAA", "BCB", "AAA", 'A', "slabWood", 'B', "paper", 'C', "recordBlank");
+
+		ModRecipeHelper.addShapedRecipe(OedldoedlMusic.MODID, "music_player", new ItemStack(ModBlocks.MUSIC_PLAYER, 1, 0), "ABA", "CDC", "CCC", 'A', "ingotIron", 'B', "record", 'C', new ItemStack(Blocks.CONCRETE, 1, 15), 'D', new ItemStack(Blocks.JUKEBOX, 1, 0));
+		ModRecipeHelper.addShapedRecipe(OedldoedlMusic.MODID, "music_player_clear", new ItemStack(ModBlocks.MUSIC_PLAYER, 1, 0), "A", 'A', new ItemStack(ModBlocks.MUSIC_PLAYER, 1, 0));
+	
+		ModRecipeHelper.addShapedRecipe(OedldoedlMusic.MODID, "blank_music_disk", new ItemStack(ModItems.BLANK_MUSIC_DISC, 2, 0), "AAA", "ABA", "AAA", 'A', "gemCoal", 'B', "nuggetIron");
 	}
 }

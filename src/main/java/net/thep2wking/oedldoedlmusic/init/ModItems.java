@@ -9,6 +9,7 @@ import net.thep2wking.oedldoedlmusic.api.ModItemAnimeRecordBase;
 
 public class ModItems {
 	public static final Item RECORD_PACKAGE = new ModItemBlockBase(ModBlocks.RECORD_PACKAGE, ModRarities.YELLOW, false, 2, 1);
+	
 	public static final Item MUSIC_PLAYER = new ModItemBlockBase(ModBlocks.MUSIC_PLAYER, ModRarities.LIGHT_PURPLE, false, 2, 0);
 
 	public static final Item ACTUALLY_I_AM_1_MUSIC_DISC = new ModItemAnimeRecordBase("himitsuo_chodai", ModSounds.ACTUALLY_I_AM_1, "Actually I Am");
