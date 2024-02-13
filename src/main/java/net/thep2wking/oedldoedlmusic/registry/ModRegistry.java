@@ -3,19 +3,25 @@ package net.thep2wking.oedldoedlmusic.registry;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.util.SoundEvent;
+import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.thep2wking.oedldoedlcore.util.ModLogger;
 import net.thep2wking.oedldoedlcore.util.ModRegistryHelper;
 import net.thep2wking.oedldoedlmusic.OedldoedlMusic;
+import net.thep2wking.oedldoedlmusic.api.ModMusicRegistryHelper;
 import net.thep2wking.oedldoedlmusic.init.ModBlocks;
 import net.thep2wking.oedldoedlmusic.init.ModItems;
 import net.thep2wking.oedldoedlmusic.init.ModSounds;
-import net.thep2wking.oedldoedlmusic.util.ModMusicDiscRegistryHelper;
 
 @Mod.EventBusSubscriber
 public class ModRegistry {
+	@SubscribeEvent
+	public static void onModelRegister(ModelRegistryEvent event) {
+		ModMusicRegistryHelper.registerModels(event, OedldoedlMusic.MODID);
+	}
+
 	@SubscribeEvent
 	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
 		ModLogger.registeredBlocksLogger(OedldoedlMusic.MODID);
@@ -33,228 +39,228 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.MUSIC_PLAYER);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.ACTUALLY_I_AM_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.ACTUALLY_I_AM_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.ANGEL_BEATS_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.ANGEL_BEATS_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.ATTACK_ON_TITAN_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.ATTACK_ON_TITAN_2_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.ATTACK_ON_TITAN_3_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.ATTACK_ON_TITAN_4_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.ATTACK_ON_TITAN_5_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.ATTACK_ON_TITAN_6_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.ATTACK_ON_TITAN_7_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.ATTACK_ON_TITAN_8_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.ATTACK_ON_TITAN_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.ATTACK_ON_TITAN_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.ATTACK_ON_TITAN_3_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.ATTACK_ON_TITAN_4_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.ATTACK_ON_TITAN_5_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.ATTACK_ON_TITAN_6_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.ATTACK_ON_TITAN_7_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.ATTACK_ON_TITAN_8_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.BLACK_CLOVER_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.BLACK_CLOVER_2_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.BLACK_CLOVER_3_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.BLACK_CLOVER_4_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.BLACK_CLOVER_5_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.BLACK_CLOVER_6_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.BLACK_CLOVER_7_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.BLACK_CLOVER_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.BLACK_CLOVER_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.BLACK_CLOVER_3_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.BLACK_CLOVER_4_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.BLACK_CLOVER_5_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.BLACK_CLOVER_6_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.BLACK_CLOVER_7_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.BLEND_S_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.BLEND_S_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.CHIVALRY_OF_A_FAILED_KNIGHT_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.CHIVALRY_OF_A_FAILED_KNIGHT_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.CHIVALRY_OF_A_FAILED_KNIGHT_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.CHIVALRY_OF_A_FAILED_KNIGHT_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.CITRUS_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.CITRUS_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.CODE_GEASS_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.CODE_GEASS_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.COMBATANTS_WILL_BE_DISPATCHED_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.COMBATANTS_WILL_BE_DISPATCHED_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.DARLING_IN_THE_FRANXX_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.DARLING_IN_THE_FRANXX_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.DATE_A_LIVE_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.DATE_A_LIVE_2_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.DATE_A_LIVE_3_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.DATE_A_LIVE_4_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.DATE_A_LIVE_5_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.DATE_A_LIVE_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.DATE_A_LIVE_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.DATE_A_LIVE_3_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.DATE_A_LIVE_4_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.DATE_A_LIVE_5_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.DEATH_PARADE_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.DEATH_PARADE_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.DEATH_PARADE_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.DEATH_PARADE_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.DEMON_KING_DAIMAO_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.DEMON_KING_DAIMAO_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.DEMON_KING_DAIMAO_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.DEMON_KING_DAIMAO_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.DEMON_SLAYER_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.DEMON_SLAYER_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.DEMON_SLAYER_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.DEMON_SLAYER_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.DOMESTIC_GIRLFRIEND_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.DOMESTIC_GIRLFRIEND_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.DOMESTIC_GIRLFRIEND_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.DOMESTIC_GIRLFRIEND_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.DONT_TOY_WITH_ME_MISS_NAGATORO_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.DONT_TOY_WITH_ME_MISS_NAGATORO_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.DRAGON_CRISIS_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.DRAGON_CRISIS_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.EIGHTY_SIX_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.EIGHTY_SIX_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.EROMANGA_SENSEI_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.EROMANGA_SENSEI_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.FOOD_WARS_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.FOOD_WARS_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.FOOD_WARS_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.FOOD_WARS_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.FULL_DIVE_RPG_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.FULL_DIVE_RPG_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.FULL_DIVE_RPG_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.FULL_DIVE_RPG_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.GATE_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.GATE_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.GATE_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.GATE_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.GLEIPNIR_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.GLEIPNIR_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.GIRLFRIEND_GIRLFRIEND_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.GIRLFRIEND_GIRLFRIEND_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.GRAND_BLUE_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.GRAND_BLUE_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.HIGHSCHOOL_DXD_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.HIGHSCHOOL_DXD_2_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.HIGHSCHOOL_DXD_3_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.HIGHSCHOOL_DXD_4_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.HIGHSCHOOL_DXD_5_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.HIGHSCHOOL_DXD_6_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.HIGHSCHOOL_DXD_7_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.HIGHSCHOOL_DXD_8_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.HIGHSCHOOL_DXD_9_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.HIGHSCHOOL_DXD_10_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.HIGHSCHOOL_DXD_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.HIGHSCHOOL_DXD_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.HIGHSCHOOL_DXD_3_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.HIGHSCHOOL_DXD_4_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.HIGHSCHOOL_DXD_5_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.HIGHSCHOOL_DXD_6_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.HIGHSCHOOL_DXD_7_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.HIGHSCHOOL_DXD_8_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.HIGHSCHOOL_DXD_9_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.HIGHSCHOOL_DXD_10_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.HIGURASHI_WHEN_THEY_CRY_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.HIGURASHI_WHEN_THEY_CRY_2_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.HIGURASHI_WHEN_THEY_CRY_3_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.HIGURASHI_WHEN_THEY_CRY_4_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.HIGURASHI_WHEN_THEY_CRY_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.HIGURASHI_WHEN_THEY_CRY_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.HIGURASHI_WHEN_THEY_CRY_3_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.HIGURASHI_WHEN_THEY_CRY_4_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.HORIMIYA_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.HORIMIYA_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.HOW_HEAVY_ARE_THE_DUMBBELLS_YOU_LIFT_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.HOW_HEAVY_ARE_THE_DUMBBELLS_YOU_LIFT_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.HOW_HEAVY_ARE_THE_DUMBBELLS_YOU_LIFT_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.HOW_HEAVY_ARE_THE_DUMBBELLS_YOU_LIFT_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.INFINIT_STRATOS_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.INFINIT_STRATOS_2_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.INFINIT_STRATOS_3_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.INFINIT_STRATOS_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.INFINIT_STRATOS_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.INFINIT_STRATOS_3_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.INTERSPECIES_REVIEWERS_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.INTERSPECIES_REVIEWERS_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.JUJUTSU_KAISEN_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.JUJUTSU_KAISEN_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.JUJUTSU_KAISEN_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.JUJUTSU_KAISEN_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.KAGUYASAMA_LOVE_IS_WAR_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.KAGUYASAMA_LOVE_IS_WAR_2_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.KAGUYASAMA_LOVE_IS_WAR_3_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.KAGUYASAMA_LOVE_IS_WAR_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.KAGUYASAMA_LOVE_IS_WAR_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.KAGUYASAMA_LOVE_IS_WAR_3_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.KAKEGURUI_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.KAKEGURUI_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.KOMI_CANT_COMMUNICATE_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.KOMI_CANT_COMMUNICATE_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.LOVE_AFTER_WORLD_DOMINATION_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.LOVE_AFTER_WORLD_DOMINATION_1_MUSIC_DISC);
 	
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.MIERUKOCHAN_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.MIERUKOCHAN_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.MIERUKOCHAN_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.MIERUKOCHAN_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.MIRAI_NIKKI_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.MIRAI_NIKKI_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.MISS_KOBAYASHIS_DRAGON_MAID_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.MISS_KOBAYASHIS_DRAGON_MAID_2_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.MISS_KOBAYASHIS_DRAGON_MAID_3_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.MISS_KOBAYASHIS_DRAGON_MAID_4_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.MISS_KOBAYASHIS_DRAGON_MAID_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.MISS_KOBAYASHIS_DRAGON_MAID_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.MISS_KOBAYASHIS_DRAGON_MAID_3_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.MISS_KOBAYASHIS_DRAGON_MAID_4_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.MOB_PSYCHO_100_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.MOB_PSYCHO_100_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.MONOGATARI_SERIES_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.MONOGATARI_SERIES_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.MOTHER_OF_THE_GODDESS_DORMITORY_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.MOTHER_OF_THE_GODDESS_DORMITORY_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.MOTHER_OF_THE_GODDESS_DORMITORY_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.MOTHER_OF_THE_GODDESS_DORMITORY_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.MUSHOKO_TENSEI_JOBLESS_REINCARNATION_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.MUSHOKO_TENSEI_JOBLESS_REINCARNATION_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.MY_DRESS_UP_DARLING_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.MY_DRESS_UP_DARLING_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.NARUTO_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.NARUTO_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.NARUTO_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.NARUTO_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.NO_GAME_NO_LIFE_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.NO_GAME_NO_LIFE_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.NORAGAMI_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.NORAGAMI_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.NORAGAMI_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.NORAGAMI_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.ORESHURA_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.ORESHURA_1_MUSIC_DISC);
 	
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.OVERLORD_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.OVERLORD_2_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.OVERLORD_3_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.OVERLORD_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.OVERLORD_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.OVERLORD_3_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.RASCAL_DOES_NOT_DREAM_OF_BUNNY_GIRL_SENPAI_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.RASCAL_DOES_NOT_DREAM_OF_BUNNY_GIRL_SENPAI_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.RASCAL_DOES_NOT_DREAM_OF_BUNNY_GIRL_SENPAI_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.RASCAL_DOES_NOT_DREAM_OF_BUNNY_GIRL_SENPAI_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.RENT_A_GIRLFRIEND_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.RENT_A_GIRLFRIEND_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.RENT_A_GIRLFRIEND_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.RENT_A_GIRLFRIEND_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.ROSARIO_AND_VAMPIRE_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.ROSARIO_AND_VAMPIRE_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.RUST_EATER_BISCO_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.RUST_EATER_BISCO_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.SAGA_OF_TANYA_THE_EVIL_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.SAGA_OF_TANYA_THE_EVIL_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.SAGA_OF_TANYA_THE_EVIL_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.SAGA_OF_TANYA_THE_EVIL_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.SHIMONETA_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.SHIMONETA_1_MUSIC_DISC);
 	
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.SPY_X_FAMILY_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.SPY_X_FAMILY_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.SUPER_HXEROS_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.SUPER_HXEROS_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.SWORD_ART_ONLINE_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.SWORD_ART_ONLINE_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_ASTERIK_WAR_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_ASTERIK_WAR_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_ASTERIK_WAR_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_ASTERIK_WAR_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_HIDDEN_DUNGEON_I_CAN_ONLY_ENTER_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_HIDDEN_DUNGEON_I_CAN_ONLY_ENTER_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_IDATEN_DEITIES_KNOW_ONLY_PEACE_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_IDATEN_DEITIES_KNOW_ONLY_PEACE_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_MISFIT_OF_DEMON_KING_ACADEMY_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_MISFIT_OF_DEMON_KING_ACADEMY_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_PET_GIRL_OF_SAKURASOU_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_PET_GIRL_OF_SAKURASOU_2_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_PET_GIRL_OF_SAKURASOU_3_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_PET_GIRL_OF_SAKURASOU_4_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_PET_GIRL_OF_SAKURASOU_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_PET_GIRL_OF_SAKURASOU_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_PET_GIRL_OF_SAKURASOU_3_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_PET_GIRL_OF_SAKURASOU_4_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_QUINTESSENTIAL_QUINTUPLETS_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_QUINTESSENTIAL_QUINTUPLETS_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_QUINTESSENTIAL_QUINTUPLETS_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_QUINTESSENTIAL_QUINTUPLETS_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_RISING_OF_THE_SHIELD_HERO_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_RISING_OF_THE_SHIELD_HERO_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_SEVEN_DEADLY_SINS_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_SEVEN_DEADLY_SINS_2_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_SEVEN_DEADLY_SINS_3_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_SEVEN_DEADLY_SINS_4_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_SEVEN_DEADLY_SINS_5_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_SEVEN_DEADLY_SINS_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_SEVEN_DEADLY_SINS_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_SEVEN_DEADLY_SINS_3_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_SEVEN_DEADLY_SINS_4_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_SEVEN_DEADLY_SINS_5_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_TESTAMENT_OF_SISTER_NEW_DEVIL_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_TESTAMENT_OF_SISTER_NEW_DEVIL_2_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_TESTAMENT_OF_SISTER_NEW_DEVIL_3_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_TESTAMENT_OF_SISTER_NEW_DEVIL_4_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_TESTAMENT_OF_SISTER_NEW_DEVIL_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_TESTAMENT_OF_SISTER_NEW_DEVIL_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_TESTAMENT_OF_SISTER_NEW_DEVIL_3_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_TESTAMENT_OF_SISTER_NEW_DEVIL_4_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.THE_WORLDS_FINEST_ASSASSIN_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.THE_WORLDS_FINEST_ASSASSIN_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.TOKYO_REVENGERS_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.TOKYO_REVENGERS_2_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.TOKYO_REVENGERS_3_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.TOKYO_REVENGERS_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.TOKYO_REVENGERS_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.TOKYO_REVENGERS_3_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.TONIKAWA_OVER_THE_MOON_FOR_YOU_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.TONIKAWA_OVER_THE_MOON_FOR_YOU_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.TONIKAWA_OVER_THE_MOON_FOR_YOU_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.TONIKAWA_OVER_THE_MOON_FOR_YOU_2_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.TORADORA_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.TORADORA_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.UZAKICHAN_WANTS_TO_HANG_OUT_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.UZAKICHAN_WANTS_TO_HANG_OUT_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.WHY_THE_HELL_ARE_YOU_HERE_TEACHER_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.WHY_THE_HELL_ARE_YOU_HERE_TEACHER_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.YA_BOY_KONGMING_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.YA_BOY_KONGMING_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.YOUR_LIE_IN_APRIL_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.YOUR_LIE_IN_APRIL_1_MUSIC_DISC);
 
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.ZOMBIELAND_SAGA_1_MUSIC_DISC);
-		ModMusicDiscRegistryHelper.registerAnimeRecordItem(event, ModItems.ZOMBIELAND_SAGA_2_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.ZOMBIELAND_SAGA_1_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.ZOMBIELAND_SAGA_2_MUSIC_DISC);
 
 		ModRegistryHelper.registerItem(event, ModItems.BLANK_MUSIC_DISC);
 	}

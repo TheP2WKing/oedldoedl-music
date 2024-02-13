@@ -194,7 +194,6 @@ public class TileMusicPlayer extends TileEntity implements IInventory {
 	}
 
 	@Override
-	@SuppressWarnings("null")
 	public void setInventorySlotContents(int index, @Nullable ItemStack stack) {
 		contents.set(index, stack);
 		if (stack.getCount() > getInventoryStackLimit()) {

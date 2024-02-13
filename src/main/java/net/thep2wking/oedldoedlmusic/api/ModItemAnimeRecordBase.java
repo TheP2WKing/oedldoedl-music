@@ -19,7 +19,7 @@ import net.thep2wking.oedldoedlcore.util.ModTooltips;
 import net.thep2wking.oedldoedlmusic.OedldoedlMusic;
 
 public class ModItemAnimeRecordBase extends ModItemRecordBase {
-	public String origin;
+	public final String origin;
 	public static final String RECORD_GENERIC = "item." + OedldoedlMusic.MODID + ".music_disc_generic";
 
 	public ModItemAnimeRecordBase(String name, SoundEvent sound, String origin) {
@@ -28,11 +28,13 @@ public class ModItemAnimeRecordBase extends ModItemRecordBase {
 	}
 
 	@Override
+	@SideOnly(Side.CLIENT)
 	public String getRecordNameLocal() {
 		return I18n.format("item." + modid + "." + name + ".tip1");
 	}
 
 	@Override
+	@SideOnly(Side.CLIENT)
 	public String getItemStackDisplayName(ItemStack stack) {
 		return I18n.format(RECORD_GENERIC + ".name") + " - " + origin;
 	}
@@ -42,7 +44,9 @@ public class ModItemAnimeRecordBase extends ModItemRecordBase {
 	public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
 		if (ModTooltips.showAnnotationTip()) {
 			for (int i = 1; i <= annotationLines; ++i) {
-				tooltip.add(CoreConfig.TOOLTIPS.COLORS.INFORMATION_ANNOTATION_FORMATTING.getColor() + I18n.format(RECORD_GENERIC + ".annotation1") + " " + TextFormatting.YELLOW + I18n.format("item." + modid + "." + name + ".tip" + i));
+				tooltip.add(CoreConfig.TOOLTIPS.COLORS.INFORMATION_ANNOTATION_FORMATTING.getColor()
+						+ I18n.format(RECORD_GENERIC + ".annotation1") + " " + TextFormatting.YELLOW
+						+ I18n.format("item." + modid + "." + name + ".tip" + i));
 			}
 		}
 		if (ModTooltips.showInfoTip()) {

@@ -36,7 +36,6 @@ public class PacketSendPause implements IMessage {
 		buf.writeBoolean(pause);
 	}
 
-	@SuppressWarnings("null")
 	public static class Handler implements IMessageHandler<PacketSendPause, IMessage> {
 		private void handle(PacketSendPause message, MessageContext ctx) {
 			EntityPlayerMP playerEntity = ctx.getServerHandler().player;

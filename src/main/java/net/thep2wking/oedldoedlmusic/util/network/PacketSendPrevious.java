@@ -32,7 +32,6 @@ public class PacketSendPrevious implements IMessage {
 		buf.writeInt(blockPos.getZ());
 	}
 
-	@SuppressWarnings("null")
 	public static class Handler implements IMessageHandler<PacketSendPrevious, IMessage> {
 		private void handle(PacketSendPrevious message, MessageContext ctx) {
 			EntityPlayerMP playerEntity = ctx.getServerHandler().player;

@@ -32,7 +32,6 @@ public class PacketSendNext implements IMessage {
 		buf.writeInt(blockPos.getZ());
 	}
 
-	@SuppressWarnings("null")
 	public static class Handler implements IMessageHandler<PacketSendNext, IMessage> {
 		private void handle(PacketSendNext message, MessageContext ctx) {
 			EntityPlayerMP playerEntity = ctx.getServerHandler().player;

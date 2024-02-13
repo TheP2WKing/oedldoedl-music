@@ -10,7 +10,7 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemRecord;
 import net.minecraft.util.ResourceLocation;
 import net.thep2wking.oedldoedlmusic.OedldoedlMusic;
-import net.thep2wking.oedldoedlmusic.util.network.PacketHandler;
+import net.thep2wking.oedldoedlmusic.util.network.ModPacketHandler;
 import net.thep2wking.oedldoedlmusic.util.network.PacketSendNext;
 import net.thep2wking.oedldoedlmusic.util.network.PacketSendPause;
 import net.thep2wking.oedldoedlmusic.util.network.PacketSendPrevious;
@@ -85,19 +85,19 @@ public class GuiMusicPlayer extends GuiContainer {
 		if (button.enabled) {
 			switch (button.id) {
 				case 0:
-					PacketHandler.INSTANCE.sendToServer(new PacketSendPause(te.getPos(), true));
+					ModPacketHandler.INSTANCE.sendToServer(new PacketSendPause(te.getPos(), true));
 					break;
 
 				case 1:
-					PacketHandler.INSTANCE.sendToServer(new PacketSendNext(te.getPos()));
+					ModPacketHandler.INSTANCE.sendToServer(new PacketSendNext(te.getPos()));
 					break;
 
 				case 2:
-					PacketHandler.INSTANCE.sendToServer(new PacketSendPrevious(te.getPos()));
+					ModPacketHandler.INSTANCE.sendToServer(new PacketSendPrevious(te.getPos()));
 					break;
 
 				case 3:
-					PacketHandler.INSTANCE.sendToServer(new PacketSendPause(te.getPos(), false));
+					ModPacketHandler.INSTANCE.sendToServer(new PacketSendPause(te.getPos(), false));
 					break;
 			}
 		}
