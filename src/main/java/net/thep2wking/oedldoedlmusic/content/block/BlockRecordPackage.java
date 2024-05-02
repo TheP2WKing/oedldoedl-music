@@ -20,7 +20,7 @@ import net.thep2wking.oedldoedlcore.util.ModToolTypes;
 import net.thep2wking.oedldoedlmusic.config.MusicConfig;
 
 public class BlockRecordPackage extends ModBlockHorizontalBase {
-	public static final List<ItemStack> DROPS = OreDictionary.getOres("test");
+	public static final List<ItemStack> DROPS = OreDictionary.getOres("record");
 
 	public BlockRecordPackage(String modid, String name, CreativeTabs tab, Material material, SoundType sound,
 			MapColor mapColor, int harvestLevel, ModToolTypes toolType, float hardness, float resistance,
