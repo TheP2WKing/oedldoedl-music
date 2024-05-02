@@ -1,7 +1,12 @@
 package net.thep2wking.oedldoedlmusic.registry;
 
 import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemRecord;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import net.minecraftforge.oredict.OreDictionary;
+import net.minecraftforge.registries.ForgeRegistry;
 import net.thep2wking.oedldoedlcore.util.ModLogger;
 import net.thep2wking.oedldoedlcore.util.ModRecipeHelper;
 import net.thep2wking.oedldoedlmusic.OedldoedlMusic;
@@ -239,6 +244,19 @@ public class ModRecipes {
 
 			ModRecipeHelper.addOreDict("record", ModItems.ZOMBIELAND_SAGA_1_MUSIC_DISC, 0);
 			ModRecipeHelper.addOreDict("record", ModItems.ZOMBIELAND_SAGA_2_MUSIC_DISC, 0);
+
+			if (MusicConfig.CONTENT.RECORD_PACKAGE_REGISTER_ALL_MUSIC_DICS_AS_DROPS) {
+				registerOreDictForAllMusicDics();
+			}
+		}
+	}
+
+	public static void registerOreDictForAllMusicDics() {
+		ForgeRegistry<Item> itemRegistry = (ForgeRegistry<Item>) ForgeRegistries.ITEMS;
+		for (Item item : itemRegistry) {
+			if (item instanceof ItemRecord) {
+				OreDictionary.registerOre("record", new ItemStack(item));
+			}
 		}
 	}
 

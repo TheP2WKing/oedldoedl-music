@@ -2,7 +2,13 @@
 itemGroup.oedldoedlmusic.name=§dOedldoedl Music
 
 # icons
-item.oedldoedlcore.music_icon.annotation3=Version: §e1.12.2-4.0.0
+item.oedldoedlcore.music_icon.annotation3=Version: §e1.12.2-4.1.0
+
+# jei
+jei.oedldoedlmusic.record_package_drops.category=Record Package Drops
+jei.oedldoedlmusic.record_package_drops.tip1=Has a random chance of being dropped when mining.
+jei.oedldoedlmusic.record_package_drops.tip2=The more drops are possible, the smaller the chance.
+jei.oedldoedlmusic.record_package_drops.tip3=Chance:
 
 # blocks
 tile.oedldoedlmusic.record_package.name=Record Package

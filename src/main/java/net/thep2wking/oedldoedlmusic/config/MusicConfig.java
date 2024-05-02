@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.thep2wking.oedldoedlcore.util.ModReferences;
 import net.thep2wking.oedldoedlmusic.OedldoedlMusic;
 import net.thep2wking.oedldoedlmusic.config.categories.Content;
+import net.thep2wking.oedldoedlmusic.config.categories.Integration;
 import net.thep2wking.oedldoedlmusic.config.categories.Properties;
 import net.thep2wking.oedldoedlmusic.config.categories.Recipes;
 
@@ -22,6 +23,9 @@ public class MusicConfig {
 
     @Config.Name("recipes")
     public static final Recipes RECIPES = new Recipes();
+
+    @Config.Name("integration")
+    public static final Integration INTEGRATION = new Integration();
     
     @Mod.EventBusSubscriber
     public static class ConfigHolder {
