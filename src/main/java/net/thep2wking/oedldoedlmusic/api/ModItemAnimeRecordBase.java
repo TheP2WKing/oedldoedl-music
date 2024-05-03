@@ -17,6 +17,7 @@ import net.thep2wking.oedldoedlcore.config.CoreConfig;
 import net.thep2wking.oedldoedlcore.util.ModRarities;
 import net.thep2wking.oedldoedlcore.util.ModTooltips;
 import net.thep2wking.oedldoedlmusic.OedldoedlMusic;
+import net.thep2wking.oedldoedlmusic.config.MusicConfig;
 
 public class ModItemAnimeRecordBase extends ModItemRecordBase {
 	public final String origin;
@@ -25,6 +26,7 @@ public class ModItemAnimeRecordBase extends ModItemRecordBase {
 	public ModItemAnimeRecordBase(String name, SoundEvent sound, String origin) {
 		super(OedldoedlMusic.MODID, "music_disc_" + name, OedldoedlMusic.TAB, sound, ModRarities.AQUA, false, 2, 1);
 		this.origin = origin;
+		this.setMaxStackSize(MusicConfig.PROPERTIES.STACKABLE_MUSIC_DISCS ? 64 : 1);
 	}
 
 	@Override

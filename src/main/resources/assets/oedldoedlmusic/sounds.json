@@ -71,11 +71,29 @@
             }
         ]
     },
+    "the_rumbling": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/the_rumbling",
+                "stream": true
+            }
+        ]
+    },
     "utsukushiki_zankoku_na_sekai": {
         "category": "record",
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/utsukushiki_zankoku_na_sekai",
+                "stream": true
+            }
+        ]
+    },
+    "kaibutsu": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/kaibutsu",
                 "stream": true
             }
         ]
@@ -125,6 +143,15 @@
             }
         ]
     },
+    "guess_who_is_back": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/guess_who_is_back",
+                "stream": true
+            }
+        ]
+    },
     "stories": {
         "category": "record",
         "sounds": [
@@ -139,6 +166,51 @@
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/bon_appetit_s",
+                "stream": true
+            }
+        ]
+    },
+    "ready_to": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/ready_to",
+                "stream": true
+            }
+        ]
+    },
+    "daten": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/daten",
+                "stream": true
+            }
+        ]
+    },
+    "yofukashi_no_uta": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/yofukashi_no_uta",
+                "stream": true
+            }
+        ]
+    },
+    "kick_back": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/kick_back",
+                "stream": true
+            }
+        ]
+    },
+    "tablet": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/tablet",
                 "stream": true
             }
         ]
@@ -170,11 +242,38 @@
             }
         ]
     },
-    "no_6": {
+    "colors": {
         "category": "record",
         "sounds": [
             {
-                "name": "oedldoedlmusic:music/no_6",
+                "name": "oedldoedlmusic:music/colors",
+                "stream": true
+            }
+        ]
+    },
+    "no_six": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/no_six",
+                "stream": true
+            }
+        ]
+    },
+    "memories": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/memories",
+                "stream": true
+            }
+        ]
+    },
+    "torikago": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/torikago",
                 "stream": true
             }
         ]
@@ -184,6 +283,15 @@
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/date_a_live",
+                "stream": true
+            }
+        ]
+    },
+    "day_to_story": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/day_to_story",
                 "stream": true
             }
         ]
@@ -206,6 +314,33 @@
             }
         ]
     },
+    "over": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/over",
+                "stream": true
+            }
+        ]
+    },
+    "save_my_heart": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/save_my_heart",
+                "stream": true
+            }
+        ]
+    },
+    "save_the_world": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/save_the_world",
+                "stream": true
+            }
+        ]
+    },
     "trust_in_you": {
         "category": "record",
         "sounds": [
@@ -220,6 +355,15 @@
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/flyers",
+                "stream": true
+            }
+        ]
+    },
+    "last_theater": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/last_theater",
                 "stream": true
             }
         ]
@@ -247,6 +391,15 @@
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/gurenge",
+                "stream": true
+            }
+        ]
+    },
+    "zankyou_sanka": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/zankyou_sanka",
                 "stream": true
             }
         ]
@@ -287,6 +440,24 @@
             }
         ]
     },
+    "ryusensen_mayday": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/ryusensen_mayday",
+                "stream": true
+            }
+        ]
+    },
+    "three_min_twenty_nine_sec": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/three_min_twenty_nine_sec",
+                "stream": true
+            }
+        ]
+    },
     "adrenaline": {
         "category": "record",
         "sounds": [
@@ -310,6 +481,15 @@
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/last_chapter",
+                "stream": true
+            }
+        ]
+    },
+    "yuusha": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/yuusha",
                 "stream": true
             }
         ]
@@ -364,6 +544,42 @@
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/pinky_hook",
+                "stream": true
+            }
+        ]
+    },
+    "grand_blue": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/grand_blue",
+                "stream": true
+            }
+        ]
+    },
+    "my_dream_girls": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/my_dream_girls",
+                "stream": true
+            }
+        ]
+    },
+    "innocent_arrogance": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/innocent_arrogance",
+                "stream": true
+            }
+        ]
+    },
+    "work": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/work",
                 "stream": true
             }
         ]
@@ -494,6 +710,24 @@
             }
         ]
     },
+    "namara_menkoi_gal": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/namara_menkoi_gal",
+                "stream": true
+            }
+        ]
+    },
+    "iro_kousui": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/iro_kousui",
+                "stream": true
+            }
+        ]
+    },
     "macho_a_name": {
         "category": "record",
         "sounds": [
@@ -508,6 +742,15 @@
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/onegai_muscle",
+                "stream": true
+            }
+        ]
+    },
+    "another_world": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/another_world",
                 "stream": true
             }
         ]
@@ -566,11 +809,110 @@
             }
         ]
     },
+    "daddy_daddy_do": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/daddy_daddy_do",
+                "stream": true
+            }
+        ]
+    },
+    "giri_giri": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/giri_giri",
+                "stream": true
+            }
+        ]
+    },
     "love_dramatic": {
         "category": "record",
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/love_dramatic",
+                "stream": true
+            }
+        ]
+    },
+    "deal_with_the_devil": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/deal_with_the_devil",
+                "stream": true
+            }
+        ]
+    },
+    "dream_x_scramble": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/dream_x_scramble",
+                "stream": true
+            }
+        ]
+    },
+    "cinderella": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/cinderella",
+                "stream": true
+            }
+        ]
+    },
+    "koi_wa_explosion": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/koi_wa_explosion",
+                "stream": true
+            }
+        ]
+    },
+    "otomedomo_yo": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/otomedomo_yo",
+                "stream": true
+            }
+        ]
+    },
+    "yume_cinderella": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/yume_cinderella",
+                "stream": true
+            }
+        ]
+    },
+    "mienaikara_ne": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/mienaikara_ne",
+                "stream": true
+            }
+        ]
+    },
+    "mita_na_mitayo_ne_miteruyo_ne": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/mita_na_mitayo_ne_miteruyo_ne",
+                "stream": true
+            }
+        ]
+    },
+    "kuusou_mesorogiwi": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/kuusou_mesorogiwi",
                 "stream": true
             }
         ]
@@ -611,11 +953,56 @@
             }
         ]
     },
+    "one": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/one",
+                "stream": true
+            }
+        ]
+    },
+    "ninety_nine_point_nine": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/ninety_nine_point_nine",
+                "stream": true
+            }
+        ]
+    },
+    "ninety_nine": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/ninety_nine",
+                "stream": true
+            }
+        ]
+    },
     "renai_circulation": {
         "category": "record",
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/renai_circulation",
+                "stream": true
+            }
+        ]
+    },
+    "saikousoku_fall_in_love": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/saikousoku_fall_in_love",
+                "stream": true
+            }
+        ]
+    },
+    "stuck_on_you": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/stuck_on_you",
                 "stream": true
             }
         ]
@@ -643,6 +1030,15 @@
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/tabibito_no_uta",
+                "stream": true
+            }
+        ]
+    },
+    "san_san_days": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/san_san_days",
                 "stream": true
             }
         ]
@@ -683,11 +1079,65 @@
             }
         ]
     },
+    "kyoran_hey_kids": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/kyoran_hey_kids",
+                "stream": true
+            }
+        ]
+    },
+    "iden_teitei_meltdown": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/iden_teitei_meltdown",
+                "stream": true
+            }
+        ]
+    },
     "girlish_lover": {
         "category": "record",
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/girlish_lover",
+                "stream": true
+            }
+        ]
+    },
+    "clattanoia": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/clattanoia",
+                "stream": true
+            }
+        ]
+    },
+    "hollow_hunger": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/hollow_hunger",
+                "stream": true
+            }
+        ]
+    },
+    "l_l_l": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/l_l_l",
+                "stream": true
+            }
+        ]
+    },
+    "voracity": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/voracity",
                 "stream": true
             }
         ]
@@ -737,6 +1187,78 @@
             }
         ]
     },
+    "houkou": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/houkou",
+                "stream": true
+            }
+        ]
+    },
+    "jingo_jungle": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/jingo_jungle",
+                "stream": true
+            }
+        ]
+    },
+    "los_los_los": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/los_los_los",
+                "stream": true
+            }
+        ]
+    },
+    "inner_urge": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/inner_urge",
+                "stream": true
+            }
+        ]
+    },
+    "platinum_seventeen": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/platinum_seventeen",
+                "stream": true
+            }
+        ]
+    },
+    "reason_why_xxx": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/reason_why_xxx",
+                "stream": true
+            }
+        ]
+    },
+    "resonance": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/resonance",
+                "stream": true
+            }
+        ]
+    },
+    "mixed_nuts": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/mixed_nuts",
+                "stream": true
+            }
+        ]
+    },
     "lost_emotion": {
         "category": "record",
         "sounds": [
@@ -746,11 +1268,29 @@
             }
         ]
     },
+    "wake_up_hxero": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/wake_up_hxero",
+                "stream": true
+            }
+        ]
+    },
     "crossing_field": {
         "category": "record",
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/crossing_field",
+                "stream": true
+            }
+        ]
+    },
+    "daidaidaidaidaisuki_na_kimi_e": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/daidaidaidaidaisuki_na_kimi_e",
                 "stream": true
             }
         ]
@@ -769,6 +1309,24 @@
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/waiting_for_the_rain",
+                "stream": true
+            }
+        ]
+    },
+    "kimi_to_lu_shinwa": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/kimi_to_lu_shinwa",
+                "stream": true
+            }
+        ]
+    },
+    "psi_desu_i_like_you": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/psi_desu_i_like_you",
                 "stream": true
             }
         ]
@@ -854,6 +1412,15 @@
             }
         ]
     },
+    "faith": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/faith",
+                "stream": true
+            }
+        ]
+    },
     "delete": {
         "category": "record",
         "sounds": [
@@ -935,6 +1502,15 @@
             }
         ]
     },
+    "dark_seeks_light": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/dark_seeks_light",
+                "stream": true
+            }
+        ]
+    },
     "cry_baby": {
         "category": "record",
         "sounds": [
@@ -980,6 +1556,60 @@
             }
         ]
     },
+    "pre_parade": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/pre_parade",
+                "stream": true
+            }
+        ]
+    },
+    "seven_doors": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/seven_doors",
+                "stream": true
+            }
+        ]
+    },
+    "aiue": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/aiue",
+                "stream": true
+            }
+        ]
+    },
+    "not_enough": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/not_enough",
+                "stream": true
+            }
+        ]
+    },
+    "thunder_blossom": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/thunder_blossom",
+                "stream": true
+            }
+        ]
+    },
+    "wanna_muchuuby": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/wanna_muchuuby",
+                "stream": true
+            }
+        ]
+    },
     "negotiation": {
         "category": "record",
         "sounds": [
@@ -989,11 +1619,38 @@
             }
         ]
     },
+    "never_give_it_up": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/never_give_it_up",
+                "stream": true
+            }
+        ]
+    },
+    "seishun_seminar": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/seishun_seminar",
+                "stream": true
+            }
+        ]
+    },
     "bon_kyu_bon": {
         "category": "record",
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/bon_kyu_bon",
+                "stream": true
+            }
+        ]
+    },
+    "chiki_chiki_bang_bang": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/chiki_chiki_bang_bang",
                 "stream": true
             }
         ]
@@ -1021,303 +1678,6 @@
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/taiga_yo_tomo_ni_naite_kure",
-                "stream": true
-            }
-        ]
-    },
-    "the_rumbling": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/the_rumbling",
-                "stream": true
-            }
-        ]
-    },
-    "guess_who_is_back": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/guess_who_is_back",
-                "stream": true
-            }
-        ]
-    },
-    "colors": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/colors",
-                "stream": true
-            }
-        ]
-    },
-    "torikago": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/torikago",
-                "stream": true
-            }
-        ]
-    },
-    "over": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/over",
-                "stream": true
-            }
-        ]
-    },
-    "last_theater": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/last_theater",
-                "stream": true
-            }
-        ]
-    },
-    "zankyou_sanka": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/zankyou_sanka",
-                "stream": true
-            }
-        ]
-    },
-    "three_min_twenty_nine_sec": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/three_min_twenty_nine_sec",
-                "stream": true
-            }
-        ]
-    },
-    "grand_blue": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/grand_blue",
-                "stream": true
-            }
-        ]
-    },
-    "iro_kousui": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/iro_kousui",
-                "stream": true
-            }
-        ]
-    },
-    "daddy_daddy_do": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/daddy_daddy_do",
-                "stream": true
-            }
-        ]
-    },
-    "giri_giri": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/giri_giri",
-                "stream": true
-            }
-        ]
-    },
-    "deal_with_the_devil": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/deal_with_the_devil",
-                "stream": true
-            }
-        ]
-    },
-    "cinderella": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/cinderella",
-                "stream": true
-            }
-        ]
-    },
-    "mienaikara_ne": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/mienaikara_ne",
-                "stream": true
-            }
-        ]
-    },
-    "mita_na_mitayo_ne_miteruyo_ne": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/mita_na_mitayo_ne_miteruyo_ne",
-                "stream": true
-            }
-        ]
-    },
-    "kuusou_mesorogiwi": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/kuusou_mesorogiwi",
-                "stream": true
-            }
-        ]
-    },
-    "ninety_nine_point_nine": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/ninety_nine_point_nine",
-                "stream": true
-            }
-        ]
-    },
-    "san_san_days": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/san_san_days",
-                "stream": true
-            }
-        ]
-    },
-    "kyoran_hey_kids": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/kyoran_hey_kids",
-                "stream": true
-            }
-        ]
-    },
-    "houkou": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/houkou",
-                "stream": true
-            }
-        ]
-    },
-    "jingo_jungle": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/jingo_jungle",
-                "stream": true
-            }
-        ]
-    },
-    "los_los_los": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/los_los_los",
-                "stream": true
-            }
-        ]
-    },
-    "inner_urge": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/inner_urge",
-                "stream": true
-            }
-        ]
-    },
-    "faith": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/faith",
-                "stream": true
-            }
-        ]
-    },
-    "dark_seeks_light": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/dark_seeks_light",
-                "stream": true
-            }
-        ]
-    },
-    "pre_parade": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/pre_parade",
-                "stream": true
-            }
-        ]
-    },
-    "chiki_chiki_bang_bang": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/chiki_chiki_bang_bang",
-                "stream": true
-            }
-        ]
-    },
-    "koi_wa_explosion": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/koi_wa_explosion",
-                "stream": true
-            }
-        ]
-    },
-    "clattanoia": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/clattanoia",
-                "stream": true
-            }
-        ]
-    },
-    "lll": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/lll",
-                "stream": true
-            }
-        ]
-    },
-    "voracity": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/voracity",
-                "stream": true
-            }
-        ]
-    },
-    "mixed_nuts": {
-        "category": "record",
-        "sounds": [
-            {
-                "name": "oedldoedlmusic:music/mixed_nuts",
                 "stream": true
             }
         ]

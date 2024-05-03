@@ -26,6 +26,9 @@ item.oedldoedlmusic.music_disc_generic.annotation1=Song:
 item.oedldoedlmusic.music_disc_generic.tip1=Be aware that Music Files are not included by default.
 item.oedldoedlmusic.music_disc_generic.tip2=All Music and Rights belong to the Original Creator.
 
+item.oedldoedlmusic.blank_music_disc.name=Blank Music Disc
+item.oedldoedlmusic.blank_music_disc.tip1=Where are the vibes?
+
 item.oedldoedlmusic.music_disc_himitsuo_chodai.tip1=Ars Magna - Himitsuo Chodai
 
 item.oedldoedlmusic.music_disc_my_soul_your_beats.tip1=Lia - My Soul Your Beats
@@ -39,15 +42,25 @@ item.oedldoedlmusic.music_disc_shoukei_to_shikabane_no_michi.tip1=Linked Horizon
 item.oedldoedlmusic.music_disc_the_rumbling.tip1=SIM - The Rumbling
 item.oedldoedlmusic.music_disc_utsukushiki_zankoku_na_sekai.tip1=Yoko Hikasa - Utsukushiki Zankoku Na Sekai
 
+item.oedldoedlmusic.music_disc_kaibutsu.tip1=Yoasobi - Kaibutsu
+
 item.oedldoedlmusic.music_disc_answer_bc.tip1=KAF - Answer
 item.oedldoedlmusic.music_disc_beautiful.tip1=Treasure - Beautiful
 item.oedldoedlmusic.music_disc_black_catcher.tip1=Vickeblanka - Black Catcher
-item.oedldoedlmusic.music_disc_black_rover.tip1=Vickeblanka - Black Rover
+item.oedldoedlmusic.music_disc_black_rover.tip1=Vickeblanka  - Black Rover
 item.oedldoedlmusic.music_disc_grandeur.tip1=Snow Man - Grandeur
 item.oedldoedlmusic.music_disc_guess_who_is_back.tip1=Kumi Koda - Guess Who Is Back
 item.oedldoedlmusic.music_disc_stories.tip1=Snow Man - Stories
 
 item.oedldoedlmusic.music_disc_bon_appetit_s.tip1=Blend A - Bon Appetit S
+
+item.oedldoedlmusic.music_disc_ready_to.tip1=Michiru Kagemori - Ready To
+
+item.oedldoedlmusic.music_disc_daten.tip1=Creepy Nuts - Daten
+item.oedldoedlmusic.music_disc_yofukashi_no_uta.tip1=Creepy Nuts - Yofukashi No Uta
+
+item.oedldoedlmusic.music_disc_kick_back.tip1=Kenshi Yonezu - Kick Back
+item.oedldoedlmusic.music_disc_tablet.tip1=Tooboe - Tablet
 
 item.oedldoedlmusic.music_disc_haramitsu_renge.tip1=Ali Project - Haramitsu Renge
 item.oedldoedlmusic.music_disc_identity.tip1=Mikio Sakai - Identity
@@ -56,14 +69,19 @@ item.oedldoedlmusic.music_disc_azalee.tip1=Nano Ripe - Azalee
 
 item.oedldoedlmusic.music_disc_colors.tip1=Flow - Colors
 
-item.oedldoedlmusic.music_disc_no_6.tip1=Miku Ito - No 6
+item.oedldoedlmusic.music_disc_no_six.tip1=Miku Ito - No 6
+
+item.oedldoedlmusic.music_disc_memories.tip1=Hikaru Akao - Memories
 
 item.oedldoedlmusic.music_disc_torikago.tip1=XXme - Torikago
 
 item.oedldoedlmusic.music_disc_date_a_live.tip1=Sweet Arms - Date A Live
+item.oedldoedlmusic.music_disc_day_to_story.tip1=Sadohara Kaori - Day To Story
 item.oedldoedlmusic.music_disc_i_swear.tip1=Sweet Arms - I Swear
 item.oedldoedlmusic.music_disc_last_promise.tip1=Erii Yamazaki - Last Promise
 item.oedldoedlmusic.music_disc_over.tip1=Miyu Tomita - Over
+item.oedldoedlmusic.music_disc_save_my_heart.tip1=Iori Nomizu - Save My Heart
+item.oedldoedlmusic.music_disc_save_the_world.tip1=Iori Nomizu - Save The World
 item.oedldoedlmusic.music_disc_trust_in_you.tip1=Sweet Arms - Trust In You
 
 item.oedldoedlmusic.music_disc_flyers.tip1=Bradio - Flyers
@@ -75,12 +93,14 @@ item.oedldoedlmusic.music_disc_realove_realife.tip1=Sphere - Realove Realife
 item.oedldoedlmusic.music_disc_gurenge.tip1=Lisa - Gurenge
 item.oedldoedlmusic.music_disc_zankyou_sanka.tip1=Aimer - Zankyou Sanka
 
-item.oedldoedlmusic.music_disc_crying_for_rain.tip1=Minami - Cyring For Rain
+item.oedldoedlmusic.music_disc_crying_for_rain.tip1=Minami - Crying For Rain
 item.oedldoedlmusic.music_disc_wagamama.tip1=Alisa Takigawa - Wagamama
 
 item.oedldoedlmusic.music_disc_easy_love.tip1=Sumire Uesaka - Easy Love
 
 item.oedldoedlmusic.music_disc_immoralist.tip1=Yui Horie - Immoralist
+
+item.oedldoedlmusic.music_disc_ryusensen_mayday.tip1=KAF - Ryusensen Mayday
 
 item.oedldoedlmusic.music_disc_three_min_twenty_nine_sec.tip1=Hitorie - 3 Min 29 Sec
 
@@ -88,6 +108,8 @@ item.oedldoedlmusic.music_disc_adrenaline.tip1=TrySail - Adrenaline
 
 item.oedldoedlmusic.music_disc_kibou_no_uta.tip1=Ultra Tower - Kibou No Uta
 item.oedldoedlmusic.music_disc_last_chapter.tip1=Nano Ripe - Last Chapter
+
+item.oedldoedlmusic.music_disc_yuusha.tip1=Yoasobi - Yuusha
 
 item.oedldoedlmusic.music_disc_answer_fd.tip1=Mayu Maeshima - Answer
 item.oedldoedlmusic.music_disc_kisuida.tip1=Reona - Kisuida
@@ -99,7 +121,13 @@ item.oedldoedlmusic.music_disc_alternate.tip1=Helical - Alternate
 
 item.oedldoedlmusic.music_disc_pinky_hook.tip1=Momo Asakura - Pinky Hook
 
-item.oedldoedlmusic.music_disc_grand_blue.tip1=Shounan No Kaze - Grand Blue
+item.oedldoedlmusic.music_disc_grand_blue.tip1=Shonan No Kaze - Grand Blue
+
+item.oedldoedlmusic.music_disc_my_dream_girls.tip1=Nacherry - My Dream Girls
+
+item.oedldoedlmusic.music_disc_innocent_arrogance.tip1=Bish - Innocent Arrogance
+
+item.oedldoedlmusic.music_disc_work.tip1=Millennium Parade - Work
 
 item.oedldoedlmusic.music_disc_bless_your_name.tip1=ChouCho - Bless Your Name
 item.oedldoedlmusic.music_disc_gekijouron.tip1=ZAQ - Gekijouron
@@ -117,10 +145,14 @@ item.oedldoedlmusic.music_disc_gods_syndrome.tip1=Ayane - Gods Syndrome
 item.oedldoedlmusic.music_disc_i_believe_what_you_said.tip1=Asaka - I Believe What You Said
 item.oedldoedlmusic.music_disc_irregular_entropy.tip1=Ayane - Irregular Entropy
 
+item.oedldoedlmusic.music_disc_namara_menkoi_gal.tip1=Masayoshi Oishi - Namara Menkoi Gal
+
 item.oedldoedlmusic.music_disc_iro_kousui.tip1=Yoh Kamiyama - Iro Kousui
 
 item.oedldoedlmusic.music_disc_macho_a_name.tip1=Macho - Macho A Name
 item.oedldoedlmusic.music_disc_onegai_muscle.tip1=Sayuri - Onegai Muscle
+
+item.oedldoedlmusic.music_disc_another_world.tip1=AOP - Another World
 
 item.oedldoedlmusic.music_disc_beautiful_sky.tip1=Yoko Hikasa - Beautiful Sky
 item.oedldoedlmusic.music_disc_straight_jet.tip1=Minami Kuribayashi - Straight Jet
@@ -137,27 +169,38 @@ item.oedldoedlmusic.music_disc_love_dramatic.tip1=Masayuki Suzuki - Love Dramati
 
 item.oedldoedlmusic.music_disc_deal_with_the_devil.tip1=Tia - Deal With The Devil
 
-item.oedldoedlmusic.music_disc_cinderella.tip1=Cindergirl - Cinderella
+item.oedldoedlmusic.music_disc_dream_x_scramble.tip1=AiRi - Dream X Scramble
+
+item.oedldoedlmusic.music_disc_cinderella.tip1=Cidergirl - Cinderella
 
 item.oedldoedlmusic.music_disc_koi_wa_explosion.tip1=Masayoshi Oishi - Koi Wa Explosion
+
+item.oedldoedlmusic.music_disc_otomedomo_yo.tip1=ChiCo - Otomedomo Yo
+item.oedldoedlmusic.music_disc_yume_cinderella.tip1=Momo Asakura - Yume Cinderella
 
 item.oedldoedlmusic.music_disc_mienaikara_ne.tip1=Sora Amamiya - Mienaikara Ne
 item.oedldoedlmusic.music_disc_mita_na_mitayo_ne_miteruyo_ne.tip1=Sora Amamiya - Mita Na Mitayo Ne Miteruyo Ne
 
-item.oedldoedlmusic.music_disc_kuusou_mesorogiwi.tip1=Yousei Teilkoku - Kuusou Mesorogiwi
+item.oedldoedlmusic.music_disc_kuusou_mesorogiwi.tip1=Yousei Teikoku - Kuusou Mesorogiwi
 
 item.oedldoedlmusic.music_disc_ai_no_supreme.tip1=Fhana - Ai No Supreme
 item.oedldoedlmusic.music_disc_aozora_no_rhapsody.tip1=Fhana - Aozora No Rhapsody
 item.oedldoedlmusic.music_disc_ishukan_communication.tip1=Chorogonzu - Ishukan Communication
 item.oedldoedlmusic.music_disc_maid_with_dragons.tip1=Super Chorogons - Maid With Dragons
 
+item.oedldoedlmusic.music_disc_one.tip1=Mob Choir - 1
 item.oedldoedlmusic.music_disc_ninety_nine_point_nine.tip1=Mob Choir - 99.9
+item.oedldoedlmusic.music_disc_ninety_nine.tip1=Mob Choir - 99
 
 item.oedldoedlmusic.music_disc_renai_circulation.tip1=Kana Hanazawa - Renai Circulation
 
+item.oedldoedlmusic.music_disc_saikousoku_fall_in_love.tip1=Sora Amamiya - Saikousoku Fall In Love
+
+item.oedldoedlmusic.music_disc_stuck_on_you.tip1=Nowlu - Stuck On You
+
 item.oedldoedlmusic.music_disc_naughty_love.tip1=Egorka - Naughty Love
 item.oedldoedlmusic.music_disc_zettai_kimi_sengen.tip1=Ashu Nekota - Zettai Kimi Sengen
-    
+
 item.oedldoedlmusic.music_disc_tabibito_no_uta.tip1=Yuiko Ohara - Tabibito No Uta
 
 item.oedldoedlmusic.music_disc_san_san_days.tip1=Spira Spica - San San Days
@@ -170,10 +213,13 @@ item.oedldoedlmusic.music_disc_this_game.tip1=Konomi Suzuki - This Game
 item.oedldoedlmusic.music_disc_goya_no_machiawase.tip1=Hello Sleepwalkers - Goya No Machiawase
 item.oedldoedlmusic.music_disc_kyoran_hey_kids.tip1=The Oral Cigarettes - Kyoran Hey Kids
 
+item.oedldoedlmusic.music_disc_iden_teitei_meltdown.tip1=Enako - Iden Teitei Meltdown
+
 item.oedldoedlmusic.music_disc_girlish_lover.tip1=Yukari Tamura - Girlish Lover
 
 item.oedldoedlmusic.music_disc_clattanoia.tip1=OxT - Clattanoia
-item.oedldoedlmusic.music_disc_lll.tip1=Myth - LLL
+item.oedldoedlmusic.music_disc_hollow_hunger.tip1=OxT - Hollow Hunger
+item.oedldoedlmusic.music_disc_l_l_l.tip1=Myth - L L L
 item.oedldoedlmusic.music_disc_voracity.tip1=Myth - Voracity
 
 item.oedldoedlmusic.music_disc_fukashigi_no_carte.tip1=Asami Seto - Fukashigi No Carte
@@ -191,14 +237,26 @@ item.oedldoedlmusic.music_disc_los_los_los.tip1=Tanya Degurechaff - Los Los Los
 
 item.oedldoedlmusic.music_disc_inner_urge.tip1=Sumire Uesaka - Inner Urge
 
+item.oedldoedlmusic.music_disc_platinum_seventeen.tip1=Yozuca - Platinum 17
+item.oedldoedlmusic.music_disc_reason_why_xxx.tip1=Sasaki Sahana - Reason Why XXX
+
+item.oedldoedlmusic.music_disc_resonance.tip1=T.M. Revolution - Resonance
+
 item.oedldoedlmusic.music_disc_mixed_nuts.tip1=Official Hige Dandism - Mixed Nuts
 
 item.oedldoedlmusic.music_disc_lost_emotion.tip1=Ai Kakuma - Lost Emotion
+item.oedldoedlmusic.music_disc_wake_up_hxero.tip1=HxEros Syndromes - Wake Up HxERO
 
 item.oedldoedlmusic.music_disc_crossing_field.tip1=Lisa - Crossing Field
 
+item.oedldoedlmusic.music_disc_daidaidaidaidaisuki_na_kimi_e.tip1=Hakari Hanazono - Daidaidaidaidaisuki Na Kimi E
+
 item.oedldoedlmusic.music_disc_brand_new_world.tip1=Shiena Nishizawa - Brand New World
 item.oedldoedlmusic.music_disc_waiting_for_the_rain.tip1=Maaya Sakamoto - Waiting For The Rain
+
+item.oedldoedlmusic.music_disc_kimi_to_lu_shinwa.tip1=Jun Maeda - Kimi To Lu Shinwa
+
+item.oedldoedlmusic.music_disc_psi_desu_i_like_you.tip1=Dempagumi Inc - Psi Desu I Like You
 
 item.oedldoedlmusic.music_disc_pyramid_dai_gyakuten.tip1=Spira Spica - Pyramid Dai Gyakuten
 
@@ -238,19 +296,26 @@ item.oedldoedlmusic.music_disc_tsukito_hoshizora.tip1=Kanoerana - Tsukito Hoshiz
 
 item.oedldoedlmusic.music_disc_pre_parade.tip1=Rie Kugimiya - Pre Parade
 
+item.oedldoedlmusic.music_disc_seven_doors.tip1=ZAQ - Seven Doors
+
+item.oedldoedlmusic.music_disc_aiue.tip1=Maisondes - Aiue
+item.oedldoedlmusic.music_disc_not_enough.tip1=Maisondes - Not Enough
+item.oedldoedlmusic.music_disc_thunder_blossom.tip1=Maisondes - Thunder Blossom
+item.oedldoedlmusic.music_disc_wanna_muchuuby.tip1=Maisondes - Wanna Muchuuby
+
 item.oedldoedlmusic.music_disc_negotiation.tip1=Naomi Oozora - Negotiation
+
+item.oedldoedlmusic.music_disc_never_give_it_up.tip1=Study - Never Give It Up
+item.oedldoedlmusic.music_disc_seishun_seminar.tip1=Study - Seishun Seminar
 
 item.oedldoedlmusic.music_disc_bon_kyu_bon.tip1=Sumire Uesaka - Bon Kyu Bon
 
 item.oedldoedlmusic.music_disc_chiki_chiki_bang_bang.tip1=Queendom - Chiki Chiki Bang Bang
 
 item.oedldoedlmusic.music_disc_hikarunara.tip1=Goose House - Hikarunara
-    
+
 item.oedldoedlmusic.music_disc_adabana_necromancy.tip1=Romesp - Adabana Necromancy
 item.oedldoedlmusic.music_disc_taiga_yo_tomo_ni_naite_kure.tip1=Franchouchou - Taiga Yo Tomo Ni Naite Kure
-
-item.oedldoedlmusic.blank_music_disc.name=Blank Music Disc
-item.oedldoedlmusic.blank_music_disc.tip1=Where are the vibes?
 
 # gui and container
 container.oedldoedlmusic.music_player.name=Music Player
