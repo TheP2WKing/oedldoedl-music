@@ -4,14 +4,15 @@
 
 ### Added
 
-- added JEI integration for record packge drops
+- added JEI integration for record package drops
 - added a config option to register all ItemRecord to be a possible record package drop
-- added a config option to change max record stack souze
-- added various new anime music discs (with songs you can listen to)
-- 
+- added a config option to change max record stack size
+- added various new anime music discs (with songs you can not listen to unless you add the music by yourself)
+
 ### Changed
 
-- reduced hardness and blast resistance of music player 
+- basically rewrote every single music disc (magic by Python, PowerShell and ffmpeg)
+- reduced hardness and blast resistance of music player
 
 ## [4.0.0] - 2024-03-03
 
