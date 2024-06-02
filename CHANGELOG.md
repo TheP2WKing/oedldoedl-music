@@ -1,5 +1,18 @@
 # Changelog
 
+## [4.1.0] - 2024-06-02
+
+### Added
+
+- added JEI integration for record packge drops
+- added a config option to register all ItemRecord to be a possible record package drop
+- added a config option to change max record stack souze
+- added various new anime music discs (with songs you can listen to)
+- 
+### Changed
+
+- reduced hardness and blast resistance of music player 
+
 ## [4.0.0] - 2024-03-03
 
 ### 1.12.2 isn't dead, it just took some time
