@@ -171,6 +171,8 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.TRUE_BLUE_TRAVELER_MUSIC_DISC);
 		
 		ModRegistryHelper.registerItem(event, ModItems.IKOUZE_PARADISE_MUSIC_DISC);
+
+		ModRegistryHelper.registerItem(event, ModItems.SAIKYOU_GIRL_MUSIC_DISC);
 		
 		ModRegistryHelper.registerItem(event, ModItems.KAIKAI_KITAN_MUSIC_DISC);
 		ModRegistryHelper.registerItem(event, ModItems.LOST_IN_PARADISE_MUSIC_DISC);
@@ -215,6 +217,8 @@ public class ModRegistry {
 		
 		ModRegistryHelper.registerItem(event, ModItems.TABIBITO_NO_UTA_MUSIC_DISC);
 		
+		ModRegistryHelper.registerItem(event, ModItems.SHIKAIRO_DAYS_MUSIC_DISC);
+
 		ModRegistryHelper.registerItem(event, ModItems.SAN_SAN_DAYS_MUSIC_DISC);
 		
 		ModRegistryHelper.registerItem(event, ModItems.BLUE_BIRD_MUSIC_DISC);
@@ -228,6 +232,9 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.IDEN_TEITEI_MELTDOWN_MUSIC_DISC);
 		
 		ModRegistryHelper.registerItem(event, ModItems.GIRLISH_LOVER_MUSIC_DISC);
+
+		ModRegistryHelper.registerItem(event, ModItems.FATAL_MUSIC_DISC);
+		ModRegistryHelper.registerItem(event, ModItems.IDOL_MUSIC_DISC);
 		
 		ModRegistryHelper.registerItem(event, ModItems.CLATTANOIA_MUSIC_DISC);
 		ModRegistryHelper.registerItem(event, ModItems.HOLLOW_HUNGER_MUSIC_DISC);
@@ -464,6 +471,8 @@ public class ModRegistry {
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.TRUE_BLUE_TRAVELER);
 		
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.IKOUZE_PARADISE);
+
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.SAIKYOU_GIRL);
 		
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.KAIKAI_KITAN);
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.LOST_IN_PARADISE);
@@ -508,6 +517,8 @@ public class ModRegistry {
 		
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.TABIBITO_NO_UTA);
 		
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.SHIKAIRO_DAYS);
+
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.SAN_SAN_DAYS);
 		
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.BLUE_BIRD);
@@ -521,6 +532,9 @@ public class ModRegistry {
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.IDEN_TEITEI_MELTDOWN);
 		
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.GIRLISH_LOVER);
+
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.FATAL);
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.IDOL);
 		
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.CLATTANOIA);
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.HOLLOW_HUNGER);

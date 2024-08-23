@@ -144,6 +144,8 @@ public class ModItems {
 	public static final Item TRUE_BLUE_TRAVELER_MUSIC_DISC = new ModItemAnimeRecordBase("true_blue_traveler", ModSounds.TRUE_BLUE_TRAVELER, "Infinite Stratos");
 	
 	public static final Item IKOUZE_PARADISE_MUSIC_DISC = new ModItemAnimeRecordBase("ikouze_paradise", ModSounds.IKOUZE_PARADISE, "Interspecies Reviewers");
+
+	public static final Item SAIKYOU_GIRL_MUSIC_DISC = new ModItemAnimeRecordBase("saikyou_girl", ModSounds.SAIKYOU_GIRL, "Jellyfish Cant Swim In The Night");
 	
 	public static final Item KAIKAI_KITAN_MUSIC_DISC = new ModItemAnimeRecordBase("kaikai_kitan", ModSounds.KAIKAI_KITAN, "Jujutsu Kaisen");
 	public static final Item LOST_IN_PARADISE_MUSIC_DISC = new ModItemAnimeRecordBase("lost_in_paradise", ModSounds.LOST_IN_PARADISE, "Jujutsu Kaisen");
@@ -188,6 +190,8 @@ public class ModItems {
 	
 	public static final Item TABIBITO_NO_UTA_MUSIC_DISC = new ModItemAnimeRecordBase("tabibito_no_uta", ModSounds.TABIBITO_NO_UTA, "Mushoko Tensei Jobless Reincarnation");
 	
+	public static final Item SHIKAIRO_DAYS_MUSIC_DISC = new ModItemAnimeRecordBase("shikairo_days", ModSounds.SHIKAIRO_DAYS, "My Deer Friend Nokotan");
+
 	public static final Item SAN_SAN_DAYS_MUSIC_DISC = new ModItemAnimeRecordBase("san_san_days", ModSounds.SAN_SAN_DAYS, "My Dress Up Darling");
 	
 	public static final Item BLUE_BIRD_MUSIC_DISC = new ModItemAnimeRecordBase("blue_bird", ModSounds.BLUE_BIRD, "Naruto Shippuuden");
@@ -201,6 +205,9 @@ public class ModItems {
 	public static final Item IDEN_TEITEI_MELTDOWN_MUSIC_DISC = new ModItemAnimeRecordBase("iden_teitei_meltdown", ModSounds.IDEN_TEITEI_MELTDOWN, "Onimai");
 	
 	public static final Item GIRLISH_LOVER_MUSIC_DISC = new ModItemAnimeRecordBase("girlish_lover", ModSounds.GIRLISH_LOVER, "Oreshura");
+
+	public static final Item FATAL_MUSIC_DISC = new ModItemAnimeRecordBase("fatal", ModSounds.FATAL, "Oshi No Ko");
+	public static final Item IDOL_MUSIC_DISC = new ModItemAnimeRecordBase("idol", ModSounds.IDOL, "Oshi No Ko");
 	
 	public static final Item CLATTANOIA_MUSIC_DISC = new ModItemAnimeRecordBase("clattanoia", ModSounds.CLATTANOIA, "Overlord");
 	public static final Item HOLLOW_HUNGER_MUSIC_DISC = new ModItemAnimeRecordBase("hollow_hunger", ModSounds.HOLLOW_HUNGER, "Overlord");

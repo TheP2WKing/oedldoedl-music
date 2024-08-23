@@ -136,6 +136,8 @@ public class ModSounds {
 	
 	public static final SoundEvent IKOUZE_PARADISE = new ModSoundEventBase(OedldoedlMusic.MODID, "ikouze_paradise");
 	
+	public static final SoundEvent SAIKYOU_GIRL = new ModSoundEventBase(OedldoedlMusic.MODID, "saikyou_girl");
+	
 	public static final SoundEvent KAIKAI_KITAN = new ModSoundEventBase(OedldoedlMusic.MODID, "kaikai_kitan");
 	public static final SoundEvent LOST_IN_PARADISE = new ModSoundEventBase(OedldoedlMusic.MODID, "lost_in_paradise");
 	
@@ -179,8 +181,10 @@ public class ModSounds {
 	
 	public static final SoundEvent TABIBITO_NO_UTA = new ModSoundEventBase(OedldoedlMusic.MODID, "tabibito_no_uta");
 	
-	public static final SoundEvent SAN_SAN_DAYS = new ModSoundEventBase(OedldoedlMusic.MODID, "san_san_days");
+	public static final SoundEvent SHIKAIRO_DAYS = new ModSoundEventBase(OedldoedlMusic.MODID, "shikairo_days");
 	
+	public static final SoundEvent SAN_SAN_DAYS = new ModSoundEventBase(OedldoedlMusic.MODID, "san_san_days");
+
 	public static final SoundEvent BLUE_BIRD = new ModSoundEventBase(OedldoedlMusic.MODID, "blue_bird");
 	public static final SoundEvent SILHOUETTE = new ModSoundEventBase(OedldoedlMusic.MODID, "silhouette");
 	
@@ -193,6 +197,9 @@ public class ModSounds {
 	
 	public static final SoundEvent GIRLISH_LOVER = new ModSoundEventBase(OedldoedlMusic.MODID, "girlish_lover");
 	
+	public static final SoundEvent FATAL = new ModSoundEventBase(OedldoedlMusic.MODID, "fatal");
+	public static final SoundEvent IDOL = new ModSoundEventBase(OedldoedlMusic.MODID, "idol");
+
 	public static final SoundEvent CLATTANOIA = new ModSoundEventBase(OedldoedlMusic.MODID, "clattanoia");
 	public static final SoundEvent HOLLOW_HUNGER = new ModSoundEventBase(OedldoedlMusic.MODID, "hollow_hunger");
 	public static final SoundEvent L_L_L = new ModSoundEventBase(OedldoedlMusic.MODID, "l_l_l");

@@ -791,6 +791,15 @@
             }
         ]
     },
+    "saikyou_girl": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/saikyou_girl",
+                "stream": true
+            }
+        ]
+    },
     "kaikai_kitan": {
         "category": "record",
         "sounds": [
@@ -1034,6 +1043,15 @@
             }
         ]
     },
+    "shikairo_days": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/shikairo_days",
+                "stream": true
+            }
+        ]
+    },
     "san_san_days": {
         "category": "record",
         "sounds": [
@@ -1102,6 +1120,24 @@
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/girlish_lover",
+                "stream": true
+            }
+        ]
+    },
+    "fatal": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/fatal",
+                "stream": true
+            }
+        ]
+    },
+    "idol": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/idol",
                 "stream": true
             }
         ]
