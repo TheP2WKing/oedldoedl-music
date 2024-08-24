@@ -18,11 +18,11 @@ public class ModMusicRegistryHelper {
         for (Item item : ForgeRegistries.ITEMS.getValuesCollection()) {
             if (item.getRegistryName().getResourceDomain().equals(modId) && item instanceof ModItemAnimeRecordBase) {
                 ModelLoader.setCustomModelResourceLocation(item, 0,
-                        new ModelResourceLocation(OedldoedlMusic.MODID + ":anime_music_disc", "normal"));
+                        new ModelResourceLocation(OedldoedlMusic.MODID + ":anime_music_disc", "inventory"));
             } else if (item.getRegistryName().getResourceDomain().equals(modId)
                     && !(item instanceof ModItemAnimeRecordBase)) {
                 ModelLoader.setCustomModelResourceLocation(item, 0,
-                        new ModelResourceLocation(item.getRegistryName(), "normal"));
+                        new ModelResourceLocation(item.getRegistryName(), "inventory"));
             }
         }
     }
