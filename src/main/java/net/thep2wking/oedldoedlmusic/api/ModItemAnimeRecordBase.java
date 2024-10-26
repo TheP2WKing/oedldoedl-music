@@ -1,12 +1,17 @@
 package net.thep2wking.oedldoedlmusic.api;
 
+import java.io.IOException;
 import java.util.List;
 
 import javax.annotation.Nullable;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.I18n;
+import net.minecraft.client.resources.IResource;
+import net.minecraft.client.resources.IResourceManager;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
@@ -41,14 +46,37 @@ public class ModItemAnimeRecordBase extends ModItemRecordBase {
 		return I18n.format(RECORD_GENERIC + ".name") + " - " + origin;
 	}
 
+	@SideOnly(Side.CLIENT)
+	public boolean hasAudioFile() {
+		ResourceLocation resourceLocation = new ResourceLocation(OedldoedlMusic.MODID,
+				"sounds/music/" + this.getRegistryName().getResourcePath().replace("music_disc_", "") + ".ogg");
+		IResourceManager resourceManager = Minecraft.getMinecraft().getResourceManager();
+		try {
+			IResource resource = resourceManager.getResource(resourceLocation);
+			return resource != null;
+		} catch (IOException e) {
+			return false;
+		}
+	}
+
+	// @Override
+	// @SideOnly(Side.CLIENT)
+	// public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items) {
+	// if (this.isInCreativeTab(tab) && this.hasAudioFile()) {
+	// items.add(new ItemStack(this));
+	// }
+	// }
+
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
 		if (ModTooltips.showAnnotationTip()) {
 			for (int i = 1; i <= annotationLines; ++i) {
 				tooltip.add(CoreConfig.TOOLTIPS.COLORS.INFORMATION_ANNOTATION_FORMATTING.getColor()
-						+ I18n.format(RECORD_GENERIC + ".annotation1") + " " + TextFormatting.YELLOW
-						+ I18n.format("item." + modid + "." + name + ".tip" + i));
+						+ I18n.format(RECORD_GENERIC + ".annotation1") + " "
+						+ (hasAudioFile() ? TextFormatting.YELLOW : TextFormatting.RED)
+						+ I18n.format("item." + modid + "." + name + ".tip" + i)
+						+ (!hasAudioFile() ? (TextFormatting.ITALIC + " " + I18n.format(RECORD_GENERIC + ".annotation2")) : ""));
 			}
 		}
 		if (ModTooltips.showInfoTip()) {

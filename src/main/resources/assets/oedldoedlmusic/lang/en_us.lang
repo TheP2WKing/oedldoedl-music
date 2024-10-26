@@ -26,6 +26,7 @@ tile.oedldoedlmusic.music_player.tip2=A way better method of listening to record
 # items
 item.oedldoedlmusic.music_disc_generic.name=Music Disc
 item.oedldoedlmusic.music_disc_generic.annotation1=Song:
+item.oedldoedlmusic.music_disc_generic.annotation2=(Audio File missing)
 item.oedldoedlmusic.music_disc_generic.tip1=Be aware that Music Files are not included by default.
 item.oedldoedlmusic.music_disc_generic.tip2=All Music and Rights belong to the Original Creator.
 

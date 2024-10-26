@@ -1,15 +1,10 @@
 package net.thep2wking.oedldoedlmusic.integration;
 
-import java.io.IOException;
 import mezz.jei.api.IModRegistry;
 import mezz.jei.api.JEIPlugin;
 import mezz.jei.api.recipe.IRecipeCategoryRegistration;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.IResource;
-import net.minecraft.client.resources.IResourceManager;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.registries.ForgeRegistry;
 import net.thep2wking.oedldoedlcore.api.integration.ModJEIPluginBase;
@@ -41,8 +36,9 @@ public class OedldoedlMusicJEIPlugin extends ModJEIPluginBase {
 			ForgeRegistry<Item> itemRegistry = (ForgeRegistry<Item>) ForgeRegistries.ITEMS;
 			for (Item item : itemRegistry) {
 				if (item instanceof ModItemAnimeRecordBase) {
-					if (!hasAudioFile(item)) {
-						hideItem(registry, new ItemStack(item));
+					ModItemAnimeRecordBase record = (ModItemAnimeRecordBase) item;
+					if (!record.hasAudioFile()) {
+						hideItem(registry, new ItemStack(record));
 					}
 				}
 			}
@@ -53,18 +49,6 @@ public class OedldoedlMusicJEIPlugin extends ModJEIPluginBase {
 			addRecipeCatalyst(registry, new ItemStack(ModBlocks.RECORD_PACKAGE, 1, 0),
 					RecordPackageDropsRecipeCategory.UID);
 			addRecipes(registry, RecordPackageDropsRecipeWrapper.getDrops(), RecordPackageDropsRecipeCategory.UID);
-		}
-	}
-
-	public boolean hasAudioFile(Item item) {
-		ResourceLocation resourceLocation = new ResourceLocation(OedldoedlMusic.MODID,
-				"sounds/music/" + item.getRegistryName().getResourcePath().replace("music_disc_", "") + ".ogg");
-		IResourceManager resourceManager = Minecraft.getMinecraft().getResourceManager();
-		try {
-			IResource resource = resourceManager.getResource(resourceLocation);
-			return resource != null;
-		} catch (IOException e) {
-			return false;
 		}
 	}
 }
