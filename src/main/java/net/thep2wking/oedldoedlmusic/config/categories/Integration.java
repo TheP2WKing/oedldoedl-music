@@ -9,5 +9,8 @@ public class Integration {
 	public static class JEI {
 		@Config.Name("Record Package Recipe Category")
 		public boolean RECORD_PACKAGE_RECIPE_CATEGORY = true;
+
+		@Config.Name("Hide Music Discs Without Audio Files")
+		public boolean HIDE_MUSIC_DISCS_WITHOUT_AUDIO_FILES = true;
 	}
 }
