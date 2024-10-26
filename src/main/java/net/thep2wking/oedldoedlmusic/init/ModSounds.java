@@ -156,6 +156,8 @@ public class ModSounds {
 	public static final SoundEvent OTOMEDOMO_YO = new ModSoundEventBase(OedldoedlMusic.MODID, "otomedomo_yo");
 	public static final SoundEvent YUME_CINDERELLA = new ModSoundEventBase(OedldoedlMusic.MODID, "yume_cinderella");
 	
+	public static final SoundEvent TSUYOGARU_GIRL = new ModSoundEventBase(OedldoedlMusic.MODID, "tsuyogaru_girl");
+
 	public static final SoundEvent MIENAIKARA_NE = new ModSoundEventBase(OedldoedlMusic.MODID, "mienaikara_ne");
 	public static final SoundEvent MITA_NA_MITAYO_NE_MITERUYO_NE = new ModSoundEventBase(OedldoedlMusic.MODID, "mita_na_mitayo_ne_miteruyo_ne");
 	
@@ -211,6 +213,8 @@ public class ModSounds {
 	public static final SoundEvent CENTIMETER = new ModSoundEventBase(OedldoedlMusic.MODID, "centimeter");
 	public static final SoundEvent KOKUHAKU_BUNGEE_JUMP = new ModSoundEventBase(OedldoedlMusic.MODID, "kokuhaku_bungee_jump");
 	
+	public static final SoundEvent STYX_HELIX = new ModSoundEventBase(OedldoedlMusic.MODID, "styx_helix");
+
 	public static final SoundEvent DANCING_IN_THE_VELVET_MOON = new ModSoundEventBase(OedldoedlMusic.MODID, "dancing_in_the_velvet_moon");
 	
 	public static final SoundEvent HOUKOU = new ModSoundEventBase(OedldoedlMusic.MODID, "houkou");
@@ -237,6 +241,8 @@ public class ModSounds {
 	public static final SoundEvent BRAND_NEW_WORLD = new ModSoundEventBase(OedldoedlMusic.MODID, "brand_new_world");
 	public static final SoundEvent WAITING_FOR_THE_RAIN = new ModSoundEventBase(OedldoedlMusic.MODID, "waiting_for_the_rain");
 	
+	public static final SoundEvent UNMEI_KYOUDOUTAI = new ModSoundEventBase(OedldoedlMusic.MODID, "unmei_kyoudoutai");
+
 	public static final SoundEvent KIMI_TO_LU_SHINWA = new ModSoundEventBase(OedldoedlMusic.MODID, "kimi_to_lu_shinwa");
 	
 	public static final SoundEvent PSI_DESU_I_LIKE_YOU = new ModSoundEventBase(OedldoedlMusic.MODID, "psi_desu_i_like_you");

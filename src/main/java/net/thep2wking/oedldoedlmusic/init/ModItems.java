@@ -164,6 +164,8 @@ public class ModItems {
 	
 	public static final Item OTOMEDOMO_YO_MUSIC_DISC = new ModItemAnimeRecordBase("otomedomo_yo", ModSounds.OTOMEDOMO_YO, "Maidens Of The Savage Season");
 	public static final Item YUME_CINDERELLA_MUSIC_DISC = new ModItemAnimeRecordBase("yume_cinderella", ModSounds.YUME_CINDERELLA, "Maidens Of The Savage Season");
+
+	public static final Item TSUYOGARU_GIRL_MUSIC_DISC = new ModItemAnimeRecordBase("tsuyogaru_girl", ModSounds.TSUYOGARU_GIRL, "Makeine");
 	
 	public static final Item MIENAIKARA_NE_MUSIC_DISC = new ModItemAnimeRecordBase("mienaikara_ne", ModSounds.MIENAIKARA_NE, "Mierukochan");
 	public static final Item MITA_NA_MITAYO_NE_MITERUYO_NE_MUSIC_DISC = new ModItemAnimeRecordBase("mita_na_mitayo_ne_miteruyo_ne", ModSounds.MITA_NA_MITAYO_NE_MITERUYO_NE, "Mierukochan");
@@ -220,6 +222,8 @@ public class ModItems {
 	public static final Item CENTIMETER_MUSIC_DISC = new ModItemAnimeRecordBase("centimeter", ModSounds.CENTIMETER, "Rent A Girlfriend");
 	public static final Item KOKUHAKU_BUNGEE_JUMP_MUSIC_DISC = new ModItemAnimeRecordBase("kokuhaku_bungee_jump", ModSounds.KOKUHAKU_BUNGEE_JUMP, "Rent A Girlfriend");
 	
+	public static final Item STYX_HELIX_MUSIC_DISC = new ModItemAnimeRecordBase("styx_helix", ModSounds.STYX_HELIX, "ReZero");
+
 	public static final Item DANCING_IN_THE_VELVET_MOON_MUSIC_DISC = new ModItemAnimeRecordBase("dancing_in_the_velvet_moon", ModSounds.DANCING_IN_THE_VELVET_MOON, "Rosario And Vampire");
 	
 	public static final Item HOUKOU_MUSIC_DISC = new ModItemAnimeRecordBase("houkou", ModSounds.HOUKOU, "Rust Eater Bisco");
@@ -246,6 +250,8 @@ public class ModItems {
 	public static final Item BRAND_NEW_WORLD_MUSIC_DISC = new ModItemAnimeRecordBase("brand_new_world", ModSounds.BRAND_NEW_WORLD, "The Asterisk War");
 	public static final Item WAITING_FOR_THE_RAIN_MUSIC_DISC = new ModItemAnimeRecordBase("waiting_for_the_rain", ModSounds.WAITING_FOR_THE_RAIN, "The Asterisk War");
 	
+	public static final Item UNMEI_KYOUDOUTAI_MUSIC_DISC = new ModItemAnimeRecordBase("unmei_kyoudoutai", ModSounds.UNMEI_KYOUDOUTAI, "The Cafe Terrace And Its Goddesses");
+
 	public static final Item KIMI_TO_LU_SHINWA_MUSIC_DISC = new ModItemAnimeRecordBase("kimi_to_lu_shinwa", ModSounds.KIMI_TO_LU_SHINWA, "The Day I Become God");
 	
 	public static final Item PSI_DESU_I_LIKE_YOU_MUSIC_DISC = new ModItemAnimeRecordBase("psi_desu_i_like_you", ModSounds.PSI_DESU_I_LIKE_YOU, "The Disastrous Life Of Saiki K");

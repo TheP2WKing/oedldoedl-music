@@ -192,6 +192,8 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.OTOMEDOMO_YO_MUSIC_DISC);
 		ModRegistryHelper.registerItem(event, ModItems.YUME_CINDERELLA_MUSIC_DISC);
 		
+		ModRegistryHelper.registerItem(event, ModItems.TSUYOGARU_GIRL_MUSIC_DISC);
+
 		ModRegistryHelper.registerItem(event, ModItems.MIENAIKARA_NE_MUSIC_DISC);
 		ModRegistryHelper.registerItem(event, ModItems.MITA_NA_MITAYO_NE_MITERUYO_NE_MUSIC_DISC);
 		
@@ -246,6 +248,8 @@ public class ModRegistry {
 		
 		ModRegistryHelper.registerItem(event, ModItems.CENTIMETER_MUSIC_DISC);
 		ModRegistryHelper.registerItem(event, ModItems.KOKUHAKU_BUNGEE_JUMP_MUSIC_DISC);
+
+		ModRegistryHelper.registerItem(event, ModItems.STYX_HELIX_MUSIC_DISC);
 		
 		ModRegistryHelper.registerItem(event, ModItems.DANCING_IN_THE_VELVET_MOON_MUSIC_DISC);
 		
@@ -272,6 +276,8 @@ public class ModRegistry {
 		
 		ModRegistryHelper.registerItem(event, ModItems.BRAND_NEW_WORLD_MUSIC_DISC);
 		ModRegistryHelper.registerItem(event, ModItems.WAITING_FOR_THE_RAIN_MUSIC_DISC);
+
+		ModRegistryHelper.registerItem(event, ModItems.UNMEI_KYOUDOUTAI_MUSIC_DISC);
 		
 		ModRegistryHelper.registerItem(event, ModItems.KIMI_TO_LU_SHINWA_MUSIC_DISC);
 		
@@ -491,6 +497,8 @@ public class ModRegistry {
 		
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.OTOMEDOMO_YO);
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.YUME_CINDERELLA);
+
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.TSUYOGARU_GIRL);
 		
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.MIENAIKARA_NE);
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.MITA_NA_MITAYO_NE_MITERUYO_NE);
@@ -546,6 +554,8 @@ public class ModRegistry {
 		
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.CENTIMETER);
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.KOKUHAKU_BUNGEE_JUMP);
+
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.STYX_HELIX);
 		
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.DANCING_IN_THE_VELVET_MOON);
 		
@@ -572,6 +582,8 @@ public class ModRegistry {
 		
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.BRAND_NEW_WORLD);
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.WAITING_FOR_THE_RAIN);
+
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.UNMEI_KYOUDOUTAI);
 		
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.KIMI_TO_LU_SHINWA);
 		

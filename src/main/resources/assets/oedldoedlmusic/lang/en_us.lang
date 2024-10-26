@@ -184,6 +184,8 @@ item.oedldoedlmusic.music_disc_koi_wa_explosion.tip1=Masayoshi Oishi - Koi Wa Ex
 item.oedldoedlmusic.music_disc_otomedomo_yo.tip1=ChiCo - Otomedomo Yo
 item.oedldoedlmusic.music_disc_yume_cinderella.tip1=Momo Asakura - Yume Cinderella
 
+item.oedldoedlmusic.music_disc_tsuyogaru_girl.tip1=Botchi Boromaru - Tsuyogaru Girl
+
 item.oedldoedlmusic.music_disc_mienaikara_ne.tip1=Sora Amamiya - Mienaikara Ne
 item.oedldoedlmusic.music_disc_mita_na_mitayo_ne_miteruyo_ne.tip1=Sora Amamiya - Mita Na Mitayo Ne Miteruyo Ne
 
@@ -230,8 +232,8 @@ item.oedldoedlmusic.music_disc_idol.tip1=Yoasobi - Idol
 
 item.oedldoedlmusic.music_disc_clattanoia.tip1=OxT - Clattanoia
 item.oedldoedlmusic.music_disc_hollow_hunger.tip1=OxT - Hollow Hunger
-item.oedldoedlmusic.music_disc_l_l_l.tip1=Myth - L L L
-item.oedldoedlmusic.music_disc_voracity.tip1=Myth - Voracity
+item.oedldoedlmusic.music_disc_l_l_l.tip1=Myth And Roid - L L L
+item.oedldoedlmusic.music_disc_voracity.tip1=Myth And Roid - Voracity
 
 item.oedldoedlmusic.music_disc_fukashigi_no_carte.tip1=Asami Seto - Fukashigi No Carte
 item.oedldoedlmusic.music_disc_kiminosei.tip1=The Peggies - Kiminosei
@@ -239,11 +241,13 @@ item.oedldoedlmusic.music_disc_kiminosei.tip1=The Peggies - Kiminosei
 item.oedldoedlmusic.music_disc_centimeter.tip1=The Peggies - Centimeter
 item.oedldoedlmusic.music_disc_kokuhaku_bungee_jump.tip1=Halca - Kokuhaku Bungee Jump
 
+item.oedldoedlmusic.music_disc_styx_helix.tip1=Myth And Roid - Styx Helix
+
 item.oedldoedlmusic.music_disc_dancing_in_the_velvet_moon.tip1=Mizuki Nana - Dancing In The Velvet Moon
 
 item.oedldoedlmusic.music_disc_houkou.tip1=Milo - Houkou
 
-item.oedldoedlmusic.music_disc_jingo_jungle.tip1=Myth - Jingo Jungle
+item.oedldoedlmusic.music_disc_jingo_jungle.tip1=Myth And Roid - Jingo Jungle
 item.oedldoedlmusic.music_disc_los_los_los.tip1=Tanya Degurechaff - Los Los Los
 
 item.oedldoedlmusic.music_disc_inner_urge.tip1=Sumire Uesaka - Inner Urge
@@ -264,6 +268,8 @@ item.oedldoedlmusic.music_disc_daidaidaidaidaisuki_na_kimi_e.tip1=Hakari Hanazon
 
 item.oedldoedlmusic.music_disc_brand_new_world.tip1=Shiena Nishizawa - Brand New World
 item.oedldoedlmusic.music_disc_waiting_for_the_rain.tip1=Maaya Sakamoto - Waiting For The Rain
+
+item.oedldoedlmusic.music_disc_unmei_kyoudoutai.tip1=Neriame - Unmei Kyoudoutai
 
 item.oedldoedlmusic.music_disc_kimi_to_lu_shinwa.tip1=Jun Maeda - Kimi To Lu Shinwa
 

@@ -899,6 +899,15 @@
             }
         ]
     },
+    "tsuyogaru_girl": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/tsuyogaru_girl",
+                "stream": true
+            }
+        ]
+    },
     "mienaikara_ne": {
         "category": "record",
         "sounds": [
@@ -1214,6 +1223,15 @@
             }
         ]
     },
+    "styx_helix": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/styx_helix",
+                "stream": true
+            }
+        ]
+    },
     "dancing_in_the_velvet_moon": {
         "category": "record",
         "sounds": [
@@ -1345,6 +1363,15 @@
         "sounds": [
             {
                 "name": "oedldoedlmusic:music/waiting_for_the_rain",
+                "stream": true
+            }
+        ]
+    },
+    "unmei_kyoudoutai": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/unmei_kyoudoutai",
                 "stream": true
             }
         ]
