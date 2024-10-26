@@ -2,6 +2,9 @@ package net.thep2wking.oedldoedlmusic.content.block;
 
 import javax.annotation.Nullable;
 
+import mcjty.theoneprobe.api.IProbeHitData;
+import mcjty.theoneprobe.api.IProbeInfo;
+import mcjty.theoneprobe.api.ProbeMode;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
@@ -19,15 +22,19 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.thep2wking.oedldoedlcore.api.block.ModBlockHorizontalBase;
+import net.thep2wking.oedldoedlcore.config.CoreConfig;
+import net.thep2wking.oedldoedlcore.integration.top.ITOPInfoProvider;
 import net.thep2wking.oedldoedlcore.util.ModToolTypes;
 import net.thep2wking.oedldoedlmusic.OedldoedlMusic;
+import net.thep2wking.oedldoedlmusic.config.MusicConfig;
 import net.thep2wking.oedldoedlmusic.util.ModGuiHandler;
 
-public class BlockMusicPlayer extends ModBlockHorizontalBase implements ITileEntityProvider {
+public class BlockMusicPlayer extends ModBlockHorizontalBase implements ITileEntityProvider, ITOPInfoProvider {
 	public BlockMusicPlayer(String modid, String name, CreativeTabs tab, Material material, SoundType sound,
 			MapColor mapColor, int harvestLevel, ModToolTypes toolType, float hardness, float resistance,
 			int lightLevel) {
@@ -113,6 +120,27 @@ public class BlockMusicPlayer extends ModBlockHorizontalBase implements ITileEnt
 			NBTTagCompound tagCompound = stack.getTagCompound();
 			if (tagCompound != null) {
 				((TileMusicPlayer) tileEntity).readRestorableFromNBT(tagCompound);
+			}
+		}
+	}
+
+	@Override
+	public void addProbeInfo(ProbeMode mode, IProbeInfo probeInfo, EntityPlayer player, World world,
+			IBlockState blockState, IProbeHitData data) {
+		TileMusicPlayer tile = (TileMusicPlayer) world.getTileEntity(data.getPos());
+		if (tile == null)
+			return;
+
+		if (MusicConfig.INTEGRATION.TOP.MUSIC_PLAYER_CURRENT_STATUS) {
+			if (tile.isCurrentlyPlaying()) {
+				probeInfo.text(CoreConfig.TOOLTIPS.COLORS.INFORMATION_ANNOTATION_FORMATTING.getColor() + "{*gui."
+						+ OedldoedlMusic.MODID + ".music_player.artist*}" + TextFormatting.YELLOW + " "
+						+ tile.getCurrentPlayingArtist());
+				probeInfo.text(CoreConfig.TOOLTIPS.COLORS.INFORMATION_ANNOTATION_FORMATTING.getColor() + "{*gui."
+						+ OedldoedlMusic.MODID + ".music_player.song*}" + TextFormatting.YELLOW + " "
+						+ tile.getCurrentPlayingSong());
+			} else {
+				probeInfo.text(TextFormatting.YELLOW + "{*gui." + OedldoedlMusic.MODID + ".music_player.paused*}");
 			}
 		}
 	}

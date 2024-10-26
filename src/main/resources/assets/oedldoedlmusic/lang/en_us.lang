@@ -338,6 +338,13 @@ item.oedldoedlmusic.music_disc_taiga_yo_tomo_ni_naite_kure.tip1=Franchouchou - T
 container.oedldoedlmusic.music_player.name=Music Player
 gui.oedldoedlmusic.music_player.pause=X
 gui.oedldoedlmusic.music_player.play=>
-gui.oedldoedlmusic.music_player.next=->
-gui.oedldoedlmusic.music_player.previous=<-
-gui.oedldoedlmusic.music_player.paused=§4Playback Stopped!
+gui.oedldoedlmusic.music_player.next=>>
+gui.oedldoedlmusic.music_player.previous=<<
+gui.oedldoedlmusic.music_player.artist=Artist:
+gui.oedldoedlmusic.music_player.song=Song:
+gui.oedldoedlmusic.music_player.paused=Playback Paused!
+
+tooltip.oedldoedlmusic.music_player.play=Play
+tooltip.oedldoedlmusic.music_player.pause=Pause
+tooltip.oedldoedlmusic.music_player.previous=Previous
+tooltip.oedldoedlmusic.music_player.next=Next

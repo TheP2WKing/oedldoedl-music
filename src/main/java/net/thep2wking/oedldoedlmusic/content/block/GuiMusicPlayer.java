@@ -1,6 +1,8 @@
 package net.thep2wking.oedldoedlmusic.content.block;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiContainer;
@@ -8,6 +10,7 @@ import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemRecord;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.thep2wking.oedldoedlmusic.OedldoedlMusic;
 import net.thep2wking.oedldoedlmusic.util.network.ModPacketHandler;
@@ -16,34 +19,32 @@ import net.thep2wking.oedldoedlmusic.util.network.PacketSendPause;
 import net.thep2wking.oedldoedlmusic.util.network.PacketSendPrevious;
 
 public class GuiMusicPlayer extends GuiContainer {
-	private final IInventory playerInv;
 	private final TileMusicPlayer te;
 
-	GuiButton pause;
-	GuiButton play;
-	GuiButton next;
-	GuiButton previous;
+	private GuiButton pause;
+	private GuiButton play;
+	private GuiButton next;
+	private GuiButton previous;
 
 	public GuiMusicPlayer(IInventory playerInv, TileMusicPlayer te) {
 		super(new ContainerMusicPlayer(playerInv, te));
-		this.playerInv = playerInv;
 		this.te = te;
 		xSize = 176;
-		ySize = 166;
+		ySize = 184;
 	}
 
 	@Override
 	public void initGui() {
 		super.initGui();
 		buttonList.clear();
-		pause = this.addButton(new GuiButton(0, guiLeft + 145, guiTop + 15, 20, 20,
+		pause = this.addButton(new GuiButton(0, guiLeft + 147, guiTop + 21, 20, 20,
 				I18n.format("gui." + OedldoedlMusic.MODID + ".music_player.pause")));
-		play = this.addButton(new GuiButton(3, guiLeft + 120, guiTop + 15, 20, 20,
-				I18n.format("gui." + OedldoedlMusic.MODID + ".music_player.play")));
-		next = this.addButton(new GuiButton(1, guiLeft + 145, guiTop + 40, 20, 20,
+		next = this.addButton(new GuiButton(1, guiLeft + 147, guiTop + 47, 20, 20,
 				I18n.format("gui." + OedldoedlMusic.MODID + ".music_player.next")));
-		previous = this.addButton(new GuiButton(2, guiLeft + 120, guiTop + 40, 20, 20,
+		previous = this.addButton(new GuiButton(2, guiLeft + 121, guiTop + 47, 20, 20,
 				I18n.format("gui." + OedldoedlMusic.MODID + ".music_player.previous")));
+		play = this.addButton(new GuiButton(3, guiLeft + 121, guiTop + 21, 20, 20,
+				I18n.format("gui." + OedldoedlMusic.MODID + ".music_player.play")));
 	}
 
 	@Override
@@ -51,37 +52,88 @@ public class GuiMusicPlayer extends GuiContainer {
 		drawDefaultBackground();
 		super.drawScreen(mouseX, mouseY, partialTicks);
 		renderHoveredToolTip(mouseX, mouseY);
+
+		if (play.isMouseOver()) {
+			List<String> tooltip = new ArrayList<>();
+			tooltip.add(I18n.format("tooltip.oedldoedlmusic.music_player.play"));
+			drawHoveringText(tooltip, mouseX, mouseY);
+		}
+
+		if (pause.isMouseOver()) {
+			List<String> tooltip = new ArrayList<>();
+			tooltip.add(I18n.format("tooltip.oedldoedlmusic.music_player.pause"));
+			drawHoveringText(tooltip, mouseX, mouseY);
+		}
+
+		if (next.isMouseOver()) {
+			List<String> tooltip = new ArrayList<>();
+			tooltip.add(I18n.format("tooltip.oedldoedlmusic.music_player.next"));
+			drawHoveringText(tooltip, mouseX, mouseY);
+		}
+
+		if (previous.isMouseOver()) {
+			List<String> tooltip = new ArrayList<>();
+			tooltip.add(I18n.format("tooltip.oedldoedlmusic.music_player.previous"));
+			drawHoveringText(tooltip, mouseX, mouseY);
+		}
 	}
 
 	@Override
-	protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {
+	public void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {
 		GlStateManager.color(1.0f, 1.0f, 1.0f, 1.0f);
 		mc.getTextureManager().bindTexture(new ResourceLocation(OedldoedlMusic.MODID, "textures/gui/music_player.png"));
 		this.drawTexturedModalRect(guiLeft, guiTop, 0, 0, xSize, ySize);
 	}
 
 	@Override
-	protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
+	public void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
 		String s = te.getDisplayName().getUnformattedText();
+		ItemStack recordStack = te.getStackInSlot(te.currentlyPlaying);
+		int indent = 10;
 		fontRenderer.drawString(s, 88 - fontRenderer.getStringWidth(s) / 2, 6, 4210752);
-		if (te.currentlyPlaying != -1) {
+		int maxWidth = 120;
+		if (te.currentlyPlaying != -1 && recordStack.getItem() instanceof ItemRecord) {
+			String defaultName = ((ItemRecord) te.getStackInSlot(te.currentlyPlaying).getItem())
+					.getRecordNameLocal();
+			String[] parts = defaultName.split(" - ", 2);
+			String artist = parts.length > 0 ? truncateString(parts[0], maxWidth) : "";
+			String song = parts.length > 1 ? truncateString(parts[1], maxWidth) : "";
+
 			fontRenderer.drawString(
-					((ItemRecord) te.getStackInSlot(te.currentlyPlaying).getItem()).getRecordNameLocal(), 8, 62,
-					4210752);
-		} else
-			fontRenderer.drawString(I18n.format("gui." + OedldoedlMusic.MODID + ".music_player.paused"), 8, 62, 4210752);
-		fontRenderer.drawString(playerInv.getDisplayName().getUnformattedText(), 8, 72, 4210752);
+					I18n.format("gui." + OedldoedlMusic.MODID + ".music_player.artist") + " " + artist,
+					indent, 77, 0xffffff);
+			fontRenderer.drawString(I18n.format("gui." + OedldoedlMusic.MODID + ".music_player.song") + " " + song,
+					indent, 88, 0xffffff);
+		} else {
+			fontRenderer.drawString(I18n.format("gui." + OedldoedlMusic.MODID + ".music_player.paused"), indent, 77,
+					0xFFFF55);
+		}
 		GlStateManager.color(1.0f, 1.0f, 1.0f, 1.0f);
 		mc.getTextureManager().bindTexture(new ResourceLocation(OedldoedlMusic.MODID, "textures/gui/music_player.png"));
 		int index = te.selectedTrack;
 		int x, y;
 		x = index % 6;
 		y = index / 6;
-		this.drawTexturedModalRect(6 + x * 18, 22 + y * 18, 236, 0, 20, 20);
+		this.drawTexturedModalRect(6 + x * 18, 16 + y * 18, 236, 0, 20, 20);
+	}
+
+	private String truncateString(String str, int maxWidth) {
+		int stringWidth = fontRenderer.getStringWidth(str);
+		if (stringWidth <= maxWidth) {
+			return str;
+		}
+		String truncated = "";
+		for (int i = 0; i < str.length(); i++) {
+			truncated += str.charAt(i);
+			if (fontRenderer.getStringWidth(truncated + "...") > maxWidth) {
+				return truncated.substring(0, truncated.length() - 1) + "...";
+			}
+		}
+		return truncated;
 	}
 
 	@Override
-	protected void actionPerformed(GuiButton button) throws IOException {
+	public void actionPerformed(GuiButton button) throws IOException {
 		if (button.enabled) {
 			switch (button.id) {
 				case 0:

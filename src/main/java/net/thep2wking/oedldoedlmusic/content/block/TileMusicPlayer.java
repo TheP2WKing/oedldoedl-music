@@ -10,15 +10,17 @@ import net.minecraft.item.ItemRecord;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.ITickable;
 import net.minecraft.util.NonNullList;
-import net.minecraft.util.SoundEvent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextComponentTranslation;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import net.thep2wking.oedldoedlmusic.OedldoedlMusic;
 
-public class TileMusicPlayer extends TileEntity implements IInventory {
-	private NonNullList<ItemStack> contents = NonNullList.<ItemStack>withSize(12, ItemStack.EMPTY);
+public class TileMusicPlayer extends TileEntity implements IInventory, ITickable {
+	private NonNullList<ItemStack> contents = NonNullList.<ItemStack>withSize(getSizeInventory(), ItemStack.EMPTY);
 	private String customName;
 	public int selectedTrack = 0;
 	public int currentlyPlaying = -1;
@@ -76,12 +78,15 @@ public class TileMusicPlayer extends TileEntity implements IInventory {
 
 	@Override
 	public int getSizeInventory() {
-		return 12;
+		return 6 * 3;
 	}
 
 	@Override
 	public ItemStack getStackInSlot(int index) {
-		return contents.get(index);
+		if (index >= 0 && index < contents.size()) {
+			return contents.get(index);
+		}
+		return ItemStack.EMPTY;
 	}
 
 	@Override
@@ -122,12 +127,12 @@ public class TileMusicPlayer extends TileEntity implements IInventory {
 			return;
 		}
 		selectedTrack++;
-		if (selectedTrack >= 12) {
+		if (selectedTrack >= getSizeInventory()) {
 			selectedTrack = 0;
 		}
 		while (contents.get(selectedTrack).isEmpty() || contents.get(selectedTrack) == null) {
 			selectedTrack++;
-			if (selectedTrack >= 12) {
+			if (selectedTrack >= getSizeInventory()) {
 				selectedTrack = 0;
 			}
 		}
@@ -143,12 +148,12 @@ public class TileMusicPlayer extends TileEntity implements IInventory {
 		}
 		selectedTrack--;
 		if (selectedTrack <= -1) {
-			selectedTrack = 11;
+			selectedTrack = (getSizeInventory() - 1);
 		}
 		while (contents.get(selectedTrack).isEmpty() || contents.get(selectedTrack) == null) {
 			selectedTrack--;
 			if (selectedTrack <= -1) {
-				selectedTrack = 11;
+				selectedTrack = (getSizeInventory() - 1);
 			}
 		}
 	}
@@ -169,6 +174,23 @@ public class TileMusicPlayer extends TileEntity implements IInventory {
 		ItemStackHelper.loadAllItems(compound, contents);
 		customName = compound.getString("CustomName");
 		selectedTrack = compound.getInteger("Track");
+	}
+
+	@Override
+	public NBTTagCompound writeToNBT(NBTTagCompound compound) {
+		super.writeToNBT(compound);
+		ItemStackHelper.saveAllItems(compound, contents);
+		if (hasCustomName()) {
+			compound.setString("CustomName", customName);
+		}
+		compound.setInteger("Track", selectedTrack);
+		return compound;
+	}
+
+	public void writeRestorableToNBT(NBTTagCompound compound) {
+		ItemStackHelper.saveAllItems(compound, contents);
+		compound.setString("CustomName", customName);
+		compound.setInteger("Track", selectedTrack);
 	}
 
 	@Override
@@ -196,39 +218,73 @@ public class TileMusicPlayer extends TileEntity implements IInventory {
 	@Override
 	public void setInventorySlotContents(int index, @Nullable ItemStack stack) {
 		contents.set(index, stack);
-		if (stack.getCount() > getInventoryStackLimit()) {
-
+		if (stack != null && stack.getCount() > getInventoryStackLimit()) {
 			stack.setCount(getInventoryStackLimit());
 		}
-		if (index == currentlyPlaying && contents.get(index).isEmpty())
+		if (index == currentlyPlaying && (stack == null || stack.isEmpty())) {
 			togglePause(true);
+		}
 		markDirty();
 	}
 
 	public void togglePause(boolean shouldStopSong) {
 		world.playEvent(1010, pos, 0);
-		world.playRecord(pos, (SoundEvent) null);
+		world.playRecord(pos, null);
 		currentlyPlaying = -1;
-		if (!contents.get(selectedTrack).isEmpty() && !shouldStopSong) {
-			world.playEvent((EntityPlayer) null, 1010, pos, Item.getIdFromItem(contents.get(selectedTrack).getItem()));
-			currentlyPlaying = selectedTrack;
+		if (!shouldStopSong && selectedTrack >= 0 && selectedTrack < contents.size()) {
+			ItemStack selectedStack = contents.get(selectedTrack);
+			if (selectedStack != null && !selectedStack.isEmpty()) {
+				world.playEvent(null, 1010, pos, Item.getIdFromItem(selectedStack.getItem()));
+				currentlyPlaying = selectedTrack;
+			}
+		}
+	}
+	
+    @Override
+    public void update() {
+        if (currentlyPlaying != -1) {
+            if (currentlyPlaying >= contents.size() || contents.get(currentlyPlaying).isEmpty()) {
+				togglePause(true);
+            }
+        }
+    }
+
+	public boolean isCurrentlyPlaying() {
+		return currentlyPlaying != -1;
+	}
+
+	@SideOnly(Side.CLIENT)
+	public String getCurrentPlayingSing() {
+		if (currentlyPlaying != -1) {
+			String defaultName = ((ItemRecord) contents.get(currentlyPlaying).getItem()).getRecordNameLocal();
+			String[] parts = defaultName.split(" - ", 2);
+			String artist = parts.length > 0 ? parts[0] : "";
+			String song = parts.length > 1 ? parts[1] : "";
+			return artist + " - " + song;
+		} else {
+			return new TextComponentTranslation("gui." + OedldoedlMusic.MODID + ".music_player.paused").getFormattedText();
 		}
 	}
 
-	@Override
-	public NBTTagCompound writeToNBT(NBTTagCompound compound) {
-		super.writeToNBT(compound);
-		ItemStackHelper.saveAllItems(compound, contents);
-		if (hasCustomName()) {
-			compound.setString("CustomName", customName);
+	public String getCurrentPlayingArtist() {
+		if (currentlyPlaying != -1) {
+			String defaultName = ((ItemRecord) contents.get(currentlyPlaying).getItem()).getRecordNameLocal();
+			String[] parts = defaultName.split(" - ", 2);
+			String artist = parts.length > 0 ? parts[0] : "";
+			return artist;
+		} else {
+			return "";
 		}
-		compound.setInteger("Track", selectedTrack);
-		return compound;
 	}
 
-	public void writeRestorableToNBT(NBTTagCompound compound) {
-		ItemStackHelper.saveAllItems(compound, contents);
-		compound.setString("CustomName", customName);
-		compound.setInteger("Track", selectedTrack);
+	public String getCurrentPlayingSong() {
+		if (currentlyPlaying != -1) {
+			String defaultName = ((ItemRecord) contents.get(currentlyPlaying).getItem()).getRecordNameLocal();
+			String[] parts = defaultName.split(" - ", 2);
+			String song = parts.length > 1 ? parts[1] : "";
+			return song;
+		} else {
+			return "";
+		}
 	}
 }

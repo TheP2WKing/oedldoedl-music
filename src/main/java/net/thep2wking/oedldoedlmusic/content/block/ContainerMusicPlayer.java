@@ -15,18 +15,18 @@ public class ContainerMusicPlayer extends Container {
 
 	public ContainerMusicPlayer(IInventory playerInv, TileMusicPlayer te) {
 		this.te = te;
-		for (int y = 0; y < 2; ++y) {
+		for (int y = 0; y < 3; ++y) {
 			for (int x = 0; x < 6; ++x) {
-				addSlotToContainer(new SlotMusicPlayer(te, x + y * 6, 8 + x * 18, 24 + y * 18));
+				addSlotToContainer(new SlotMusicPlayer(te, x + y * 6, 8 + x * 18, 18 + y * 18));
 			}
 		}
 		for (int y = 0; y < 3; ++y) {
 			for (int x = 0; x < 9; ++x) {
-				addSlotToContainer(new Slot(playerInv, x + y * 9 + 9, 8 + x * 18, 84 + y * 18));
+				addSlotToContainer(new Slot(playerInv, x + y * 9 + 9, 8 + x * 18, 102 + y * 18));
 			}
 		}
 		for (int x = 0; x < 9; ++x) {
-			addSlotToContainer(new Slot(playerInv, x, 8 + x * 18, 142));
+			addSlotToContainer(new Slot(playerInv, x, 8 + x * 18, 160));
 		}
 	}
 
