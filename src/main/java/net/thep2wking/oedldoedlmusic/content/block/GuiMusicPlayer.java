@@ -95,10 +95,9 @@ public class GuiMusicPlayer extends GuiContainer {
 		if (te.currentlyPlaying != -1 && recordStack.getItem() instanceof ItemRecord) {
 			String defaultName = ((ItemRecord) te.getStackInSlot(te.currentlyPlaying).getItem())
 					.getRecordNameLocal();
-			String[] parts = defaultName.split(" - ", 2);
-			String artist = parts.length > 0 ? truncateString(parts[0], maxWidth) : "";
-			String song = parts.length > 1 ? truncateString(parts[1], maxWidth) : "";
-
+			String[] parts = defaultName.split("-", 2);
+			String artist = parts.length > 0 ? truncateString(parts[0].trim(), maxWidth) : "";
+			String song = parts.length > 1 ? truncateString(parts[1].trim(), maxWidth) : "";
 			fontRenderer.drawString(
 					I18n.format("gui." + OedldoedlMusic.MODID + ".music_player.artist") + " " + artist,
 					indent, 77, 0xffffff);

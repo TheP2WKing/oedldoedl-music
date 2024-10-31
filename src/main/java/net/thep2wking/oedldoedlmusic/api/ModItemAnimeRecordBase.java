@@ -15,6 +15,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.thep2wking.oedldoedlcore.api.sound.ModItemRecordBase;
@@ -34,38 +35,32 @@ public class ModItemAnimeRecordBase extends ModItemRecordBase {
 		this.setMaxStackSize(MusicConfig.PROPERTIES.STACKABLE_MUSIC_DISCS ? 64 : 1);
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
-	@SideOnly(Side.CLIENT)
 	public String getRecordNameLocal() {
-		return I18n.format("item." + modid + "." + name + ".tip1");
+		return net.minecraft.util.text.translation.I18n.translateToLocal("item." + modid + "." + name + ".tip1");
 	}
-
+	
+	@SuppressWarnings("deprecation")
 	@Override
-	@SideOnly(Side.CLIENT)
 	public String getItemStackDisplayName(ItemStack stack) {
-		return I18n.format(RECORD_GENERIC + ".name") + " - " + origin;
+		return net.minecraft.util.text.translation.I18n.translateToLocal(RECORD_GENERIC + ".name") + " - " + origin;
 	}
 
-	@SideOnly(Side.CLIENT)
 	public boolean hasAudioFile() {
-		ResourceLocation resourceLocation = new ResourceLocation(OedldoedlMusic.MODID,
-				"sounds/music/" + this.getRegistryName().getResourcePath().replace("music_disc_", "") + ".ogg");
-		IResourceManager resourceManager = Minecraft.getMinecraft().getResourceManager();
-		try {
-			IResource resource = resourceManager.getResource(resourceLocation);
-			return resource != null;
-		} catch (IOException e) {
-			return false;
+		if (FMLCommonHandler.instance().getSide().isClient()) {
+			ResourceLocation resourceLocation = new ResourceLocation(OedldoedlMusic.MODID,
+					"sounds/music/" + this.getRegistryName().getResourcePath().replace("music_disc_", "") + ".ogg");
+			IResourceManager resourceManager = Minecraft.getMinecraft().getResourceManager();
+			try {
+				IResource resource = resourceManager.getResource(resourceLocation);
+				return resource != null;
+			} catch (IOException e) {
+				return false;
+			}
 		}
+		return false;
 	}
-
-	// @Override
-	// @SideOnly(Side.CLIENT)
-	// public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items) {
-	// if (this.isInCreativeTab(tab) && this.hasAudioFile()) {
-	// items.add(new ItemStack(this));
-	// }
-	// }
 
 	@Override
 	@SideOnly(Side.CLIENT)
@@ -76,7 +71,9 @@ public class ModItemAnimeRecordBase extends ModItemRecordBase {
 						+ I18n.format(RECORD_GENERIC + ".annotation1") + " "
 						+ (hasAudioFile() ? TextFormatting.YELLOW : TextFormatting.RED)
 						+ I18n.format("item." + modid + "." + name + ".tip" + i)
-						+ (!hasAudioFile() ? (TextFormatting.ITALIC + " " + I18n.format(RECORD_GENERIC + ".annotation2")) : ""));
+						+ (!hasAudioFile()
+								? (TextFormatting.ITALIC + " " + I18n.format(RECORD_GENERIC + ".annotation2"))
+								: ""));
 			}
 		}
 		if (ModTooltips.showInfoTip()) {

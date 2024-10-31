@@ -15,8 +15,6 @@ import net.minecraft.util.NonNullList;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextComponentTranslation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 import net.thep2wking.oedldoedlmusic.OedldoedlMusic;
 
 public class TileMusicPlayer extends TileEntity implements IInventory, ITickable {
@@ -169,13 +167,6 @@ public class TileMusicPlayer extends TileEntity implements IInventory, ITickable
 		selectedTrack = compound.getInteger("Track");
 	}
 
-	public void readRestorableFromNBT(NBTTagCompound compound) {
-		contents = NonNullList.<ItemStack>withSize(getSizeInventory(), ItemStack.EMPTY);
-		ItemStackHelper.loadAllItems(compound, contents);
-		customName = compound.getString("CustomName");
-		selectedTrack = compound.getInteger("Track");
-	}
-
 	@Override
 	public NBTTagCompound writeToNBT(NBTTagCompound compound) {
 		super.writeToNBT(compound);
@@ -191,6 +182,13 @@ public class TileMusicPlayer extends TileEntity implements IInventory, ITickable
 		ItemStackHelper.saveAllItems(compound, contents);
 		compound.setString("CustomName", customName);
 		compound.setInteger("Track", selectedTrack);
+	}
+
+	public void readRestorableFromNBT(NBTTagCompound compound) {
+		contents = NonNullList.<ItemStack>withSize(getSizeInventory(), ItemStack.EMPTY);
+		ItemStackHelper.loadAllItems(compound, contents);
+		customName = compound.getString("CustomName");
+		selectedTrack = compound.getInteger("Track");
 	}
 
 	@Override
@@ -239,52 +237,13 @@ public class TileMusicPlayer extends TileEntity implements IInventory, ITickable
 			}
 		}
 	}
-	
-    @Override
-    public void update() {
-        if (currentlyPlaying != -1) {
-            if (currentlyPlaying >= contents.size() || contents.get(currentlyPlaying).isEmpty()) {
+
+	@Override
+	public void update() {
+		if (currentlyPlaying != -1) {
+			if (currentlyPlaying >= contents.size() || contents.get(currentlyPlaying).isEmpty()) {
 				togglePause(true);
-            }
-        }
-    }
-
-	public boolean isCurrentlyPlaying() {
-		return currentlyPlaying != -1;
-	}
-
-	@SideOnly(Side.CLIENT)
-	public String getCurrentPlayingSing() {
-		if (currentlyPlaying != -1) {
-			String defaultName = ((ItemRecord) contents.get(currentlyPlaying).getItem()).getRecordNameLocal();
-			String[] parts = defaultName.split(" - ", 2);
-			String artist = parts.length > 0 ? parts[0] : "";
-			String song = parts.length > 1 ? parts[1] : "";
-			return artist + " - " + song;
-		} else {
-			return new TextComponentTranslation("gui." + OedldoedlMusic.MODID + ".music_player.paused").getFormattedText();
-		}
-	}
-
-	public String getCurrentPlayingArtist() {
-		if (currentlyPlaying != -1) {
-			String defaultName = ((ItemRecord) contents.get(currentlyPlaying).getItem()).getRecordNameLocal();
-			String[] parts = defaultName.split(" - ", 2);
-			String artist = parts.length > 0 ? parts[0] : "";
-			return artist;
-		} else {
-			return "";
-		}
-	}
-
-	public String getCurrentPlayingSong() {
-		if (currentlyPlaying != -1) {
-			String defaultName = ((ItemRecord) contents.get(currentlyPlaying).getItem()).getRecordNameLocal();
-			String[] parts = defaultName.split(" - ", 2);
-			String song = parts.length > 1 ? parts[1] : "";
-			return song;
-		} else {
-			return "";
+			}
 		}
 	}
 }
