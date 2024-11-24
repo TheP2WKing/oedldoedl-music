@@ -215,6 +215,8 @@ public class ModItems {
 	public static final Item HOLLOW_HUNGER_MUSIC_DISC = new ModItemAnimeRecordBase("hollow_hunger", ModSounds.HOLLOW_HUNGER, "Overlord");
 	public static final Item L_L_L_MUSIC_DISC = new ModItemAnimeRecordBase("l_l_l", ModSounds.L_L_L, "Overlord");
 	public static final Item VORACITY_MUSIC_DISC = new ModItemAnimeRecordBase("voracity", ModSounds.VORACITY, "Overlord");
+
+	public static final Item IINAZUKKYUN_MUSIC_DISC = new ModItemAnimeRecordBase("iinazukkyun", ModSounds.IINAZUKKYUN, "Ranma");
 	
 	public static final Item FUKASHIGI_NO_CARTE_MUSIC_DISC = new ModItemAnimeRecordBase("fukashigi_no_carte", ModSounds.FUKASHIGI_NO_CARTE, "Rascal Does Not Dream Of Bunny Girl Senpai");
 	public static final Item KIMINOSEI_MUSIC_DISC = new ModItemAnimeRecordBase("kiminosei", ModSounds.KIMINOSEI, "Rascal Does Not Dream Of Bunny Girl Senpai");

@@ -1187,6 +1187,15 @@
             }
         ]
     },
+    "iinazukkyun": {
+        "category": "record",
+        "sounds": [
+            {
+                "name": "oedldoedlmusic:music/iinazukkyun",
+                "stream": true
+            }
+        ]
+    },
     "fukashigi_no_carte": {
         "category": "record",
         "sounds": [

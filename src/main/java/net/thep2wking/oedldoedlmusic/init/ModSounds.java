@@ -206,6 +206,8 @@ public class ModSounds {
 	public static final SoundEvent HOLLOW_HUNGER = new ModSoundEventBase(OedldoedlMusic.MODID, "hollow_hunger");
 	public static final SoundEvent L_L_L = new ModSoundEventBase(OedldoedlMusic.MODID, "l_l_l");
 	public static final SoundEvent VORACITY = new ModSoundEventBase(OedldoedlMusic.MODID, "voracity");
+
+	public static final SoundEvent IINAZUKKYUN = new ModSoundEventBase(OedldoedlMusic.MODID, "iinazukkyun");
 	
 	public static final SoundEvent FUKASHIGI_NO_CARTE = new ModSoundEventBase(OedldoedlMusic.MODID, "fukashigi_no_carte");
 	public static final SoundEvent KIMINOSEI = new ModSoundEventBase(OedldoedlMusic.MODID, "kiminosei");

@@ -242,6 +242,8 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.HOLLOW_HUNGER_MUSIC_DISC);
 		ModRegistryHelper.registerItem(event, ModItems.L_L_L_MUSIC_DISC);
 		ModRegistryHelper.registerItem(event, ModItems.VORACITY_MUSIC_DISC);
+
+		ModRegistryHelper.registerItem(event, ModItems.IINAZUKKYUN_MUSIC_DISC);
 		
 		ModRegistryHelper.registerItem(event, ModItems.FUKASHIGI_NO_CARTE_MUSIC_DISC);
 		ModRegistryHelper.registerItem(event, ModItems.KIMINOSEI_MUSIC_DISC);
@@ -548,6 +550,8 @@ public class ModRegistry {
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.HOLLOW_HUNGER);
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.L_L_L);
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.VORACITY);
+
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.IINAZUKKYUN);
 		
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.FUKASHIGI_NO_CARTE);
 		ModRegistryHelper.registerSoundEvent(event, ModSounds.KIMINOSEI);
