@@ -1,5 +1,20 @@
 # Changelog
 
+## [4.2.0] - 2024-11-27
+
+### Added
+
+- added more songs you can not listen to (unless you add them on your own)
+- added tooltip if audio files are missing from music discs
+- added tooltips to music player buttons
+- added currently playing song name and artist to music player gui
+
+### Changed
+
+- extended music player inventory size
+- updated music player display properties to align with default blocks
+- music discs without music files are hidden by default in jei
+
 ## [4.1.0] - 2024-06-09
 
 ### Added
